@@ -11,8 +11,3 @@ favicon: /-/sarvom.github.io/web3event/favicon.ico
 -- fastn.auto-import: sarvom.github.io/web3event/assets
 -- fastn.auto-import: doc-site
 
--- fastn.sitemap:
-
-# Home: index.html
-
-- Right Sidebar Sample: /sidebar/
