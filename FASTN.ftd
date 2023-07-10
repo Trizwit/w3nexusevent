@@ -1,0 +1,18 @@
+-- import: fastn
+
+-- fastn.package: sarvom.github.io/web3event
+favicon: /-/sarvom.github.io/web3event/favicon.ico
+
+-- fastn.dependency: fastn-community.github.io/doc-site as doc-site
+-- fastn.dependency: fastn-community.github.io/footer
+-- fastn.dependency: fastn-community.github.io/roboto-typography
+
+-- fastn.auto-import: sarvom.github.io/web3event/FASTN/ds
+-- fastn.auto-import: sarvom.github.io/web3event/assets
+-- fastn.auto-import: doc-site
+
+-- fastn.sitemap:
+
+# Home: index.html
+
+- Right Sidebar Sample: /sidebar/
