@@ -1,34 +1,100 @@
 -- import: sarvom.github.io/web3event/lib
+-- import: sarvom.github.io/web3event/web-components
 
 -- lib.page:
-cta-text-1: About
-cta-text-2: Speakers
+cta-text-1: Home
+cta-text-2: About
 cta-text-3: Sponsers
 cta-text-4: Agenda
-cta-text-5: Past Events
-cta-text-6: Realms
-cta-text-7: Gallery
-cta-text-8: Testimonials
-cta-text-9: FAQ
-cta-text-10: Home
+cta-text-5: Speakers
 cta-button-1: Get Your Tickets
 cta-button-2: Become a Sponser
-logo: $assets.files.images.bd-logo.webp
+logo: $assets.files.images.web32.png
 
 -- lib.hero: July 10-12,2023 
-heading: The intersection of Web3 Innovation & Culture
-
-We're tired of boring conferences that lack personality and
-excitement. That's why we're bringing together the Web3 community for
-three days of unforgettable experiences. 
-
-At BlockDown Festival, you connect with industry pioneers, thought
-leaders, and entrepreneurs while enjoying talent displays, fashion
-shows, gamifications and epic parties.
+heading: Web3 Innovater Nexus
+cta-button-1: Register Now
 
 Welcome to the celebration of all the Web3 sides!
 
--- lib.carousel:
-$active-item: 1
+-- lib.about: About Web3 Innovator Nexus
+pic: $assets.files.images.web3-1.jpg
+
+Web3Kerala is a social community that connects everyone on Web3 in Kerala in a 
+contextually meaningful way. The community provides opportunity for individuals in the 
+Web3 space in Kerala to connect and uplift each and every member in the community.With an 
+objective to setup a Web3 ecosystem in Kerala to provide education and networking 
+opportunities to Web3Kerala members to build,grow, and scale Web3.
+
+-- lib.carousel: Speakers
+
+-- lib.blog-1: Sajeev Nair
+pic: $assets.files.images.SajeevNair.jpg
+number: 1
+title: Limoverse
+cta-text: Learn more
+
+Experience the future of fashion at our Metaverse Fashion Show. Featuring awe-inspiring 
+designs from top NFT designers, our event is a celebration of digital art and innovation. 
+Get ready to immerse yourself in the world of digital art and witness the latest fashion 
+trends.
+
+-- lib.blog-1: Goutham J
+pic: $assets.files.images.Goutham.jpg
+title: Polkadex
+number: 2
+cta-text: Learn more
+
+Experience the future of fashion at our Metaverse Fashion Show. Featuring awe-inspiring 
+designs from top NFT designers, our event is a celebration of digital art and innovation. 
+Get ready to immerse yourself in the world of digital art and witness the latest fashion 
+trends.
+
+-- lib.blog-1: Jozef Jagan
+pic: $assets.files.images.Jozef.jpg
+title: Wallet Hunter
+number: 3
+cta-text: Learn more
+
+Experience the future of fashion at our Metaverse Fashion Show. Featuring awe-inspiring 
+designs from top NFT designers, our event is a celebration of digital art and innovation. 
+Get ready to immerse yourself in the world of digital art and witness the latest fashion 
+trends.
+
+-- lib.blog-1: Mirzad
+pic: $assets.files.images.Mirzad.jpg
+title: Tribe Academy
+number: 4
+cta-text: Learn more
+
+Experience the future of fashion at our Metaverse Fashion Show. Featuring awe-inspiring 
+designs from top NFT designers, our event is a celebration of digital art and innovation. 
+Get ready to immerse yourself in the world of digital art and witness the latest fashion 
+trends.
+
+-- end: lib.carousel
+
+-- lib.sponsor-section: Organized by
+
+-- lib.sponsor-card: Web3 Kerala
+logo: $assets.files.images.web32.png
+ 
+-- end: lib.sponsor-section
+
+-- lib.sponsor-section: In Assoication with
+
+-- lib.sponsor-card: Web3 Kerala
+logo: $assets.files.images.web32.png
+
+-- lib.sponsor-card: Web3 Kerala
+logo: $assets.files.images.web32.png
+
+-- lib.sponsor-card: Web3 Kerala
+logo: $assets.files.images.web32.png
+
+-- lib.sponsor-card: Web3 Kerala
+logo: $assets.files.images.web32.png
+ 
+-- end: lib.sponsor-section
 
 -- end: lib.page

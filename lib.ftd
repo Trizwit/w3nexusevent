@@ -1,26 +1,26 @@
 -- import: sarvom.github.io/web3event/common
-
--- integer $current-active: 1
+-- import: sarvom.github.io/web3event/common/button
+-- import: sarvom.github.io/web3event/web-components
 
 -- component page:
 ftd.image-src logo:
-string cta-text-1: 
-string cta-text-2: 
-string cta-text-3: 
-string cta-text-4: 
-string cta-text-5: 
-string cta-text-6: 
-string cta-text-7: 
-string cta-text-8:   
-string cta-text-9:  
-string cta-text-10: 
+optional string cta-text-1: 
+optional string cta-text-2: 
+optional string cta-text-3: 
+optional string cta-text-4: 
+optional string cta-text-5: 
+optional string cta-text-6: 
+optional string cta-text-7: 
+optional string cta-text-8:   
+optional string cta-text-9:  
+optional string cta-text-10: 
 string cta-button-1: 
 string cta-button-2: 
 children c:
 
 -- ftd.column:
 width: fill-container
-background.solid: $inherited.colors.background.base
+background.image: $assets.files.images.bg-3.jpg
 
 -- navbar: 
 logo: $page.logo
@@ -29,11 +29,6 @@ cta-text-2: $page.cta-text-2
 cta-text-3: $page.cta-text-3
 cta-text-4: $page.cta-text-4
 cta-text-5: $page.cta-text-5
-cta-text-6: $page.cta-text-6
-cta-text-7: $page.cta-text-7
-cta-text-8: $page.cta-text-8
-cta-text-9: $page.cta-text-9
-cta-text-10: $page.cta-text-10
 cta-button-1: $page.cta-button-1
 cta-button-2: $page.cta-button-2
 
@@ -76,6 +71,8 @@ optional string cta-button-2:
 
 -- ftd.column:
 width: fill-container
+z-index: 1000
+sticky: true
 
 -- navbar-mobile:
 if: { ftd.device == "mobile" }
@@ -85,11 +82,6 @@ cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
 cta-text-4: $navbar.cta-text-4
 cta-text-5: $navbar.cta-text-5
-cta-text-6: $navbar.cta-text-6
-cta-text-7: $navbar.cta-text-7
-cta-text-8: $navbar.cta-text-8
-cta-text-9: $navbar.cta-text-9
-cta-text-10: $navbar.cta-text-10
 cta-button-1: $navbar.cta-button-1
 cta-button-2: $navbar.cta-button-2
 logo: $navbar.logo
@@ -103,11 +95,6 @@ cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
 cta-text-4: $navbar.cta-text-4
 cta-text-5: $navbar.cta-text-5
-cta-text-6: $navbar.cta-text-6
-cta-text-7: $navbar.cta-text-7
-cta-text-8: $navbar.cta-text-8
-cta-text-9: $navbar.cta-text-9
-cta-text-10: $navbar.cta-text-10
 cta-button-1: $navbar.cta-button-1
 cta-button-2: $navbar.cta-button-2
 logo: $navbar.logo
@@ -140,61 +127,74 @@ optional string cta-text-9:
 optional string cta-text-10:
 optional string cta-button-1:
 optional string cta-button-2:
-ftd.image-src menu: $assets.files.images.menu.png
-ftd.image-src close: $assets.files.images.close.png
+ftd.image-src menu: $assets.files.images.menu.svg
+ftd.image-src close: $assets.files.images.close.svg
 boolean $open: false
 
 -- ftd.column:
 padding.px: 20
 width: fill-container
+background.solid if { navbar-mobile.open }: Yellow
 height: hug-content
 
 -- ftd.row:
+width: fill-container
 spacing: space-between
 
 -- ftd.image:
 src: $navbar-mobile.logo
+height.fixed.px: 64
 
 -- ftd.image:
 if: { !navbar-mobile.open }
 height.fixed.px: 32
+align-self: center
 src: $navbar-mobile.menu
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = true)
 
 -- ftd.image:
 if: { navbar-mobile.open }
 height.fixed.px: 32
+align-self: center
 src: $navbar-mobile.close
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- end: ftd.row
 
 -- ftd.column:
+if: { navbar-mobile.open }
+width: fill-container
+spacing: space-evenly
 
 -- ftd.text: $navbar-mobile.cta-text-1
+role: $inherited.types.label-large
+color: white
+
 
 -- ftd.text: $navbar-mobile.cta-text-2
+role: $inherited.types.label-large
+color: white
+
 
 -- ftd.text: $navbar-mobile.cta-text-3
+role: $inherited.types.label-large
+color: white
+
 
 -- ftd.text: $navbar-mobile.cta-text-4
+role: $inherited.types.label-large
+color: white
+
 
 -- ftd.text: $navbar-mobile.cta-text-5
+role: $inherited.types.label-large
+color: white
 
--- ftd.text: $navbar-mobile.cta-text-6
 
--- ftd.text: $navbar-mobile.cta-text-7
-
--- ftd.text: $navbar-mobile.cta-text-8
-
--- ftd.text: $navbar-mobile.cta-text-9
-
--- ftd.text: $navbar-mobile.cta-text-10
-
--- button: $navbar-mobile.cta-button-1
+-- button.button-2: $navbar-mobile.cta-button-1
 link: /
 
--- button: $navbar-mobile.cta-button-2
+-- button.button-3: $navbar-mobile.cta-button-2
 link: /
 
 -- end: ftd.column
@@ -232,7 +232,8 @@ optional string cta-button-2:
 width: fill-container
 padding.vh: 1
 height.fixed.vh: 10
-background.solid: #FF0AEC
+background.linear-gradient: $lg
+z-index: 99999
 sticky: true
 
 -- ftd.image:
@@ -248,62 +249,38 @@ spacing: space-evenly
 
 -- ftd.text: $navbar-desktop.cta-text-1
 role: $inherited.types.label-large
-color: $inherited.colors.text
+color: white
 align-self: center
+
 
 -- ftd.text: $navbar-desktop.cta-text-2
 role: $inherited.types.label-large
-color: $inherited.colors.text
+color: white
 align-self: center
 
 -- ftd.text: $navbar-desktop.cta-text-3
 role: $inherited.types.label-large
-color: $inherited.colors.text
+color: white
 align-self: center
 
 -- ftd.text: $navbar-desktop.cta-text-4
 role: $inherited.types.label-large
-color: $inherited.colors.text
+color: white
 align-self: center
 
 -- ftd.text: $navbar-desktop.cta-text-5
 role: $inherited.types.label-large
-color: $inherited.colors.text
-align-self: center
-
--- ftd.text: $navbar-desktop.cta-text-6
-role: $inherited.types.label-large
-color: $inherited.colors.text
-align-self: center
-
--- ftd.text: $navbar-desktop.cta-text-7
-role: $inherited.types.label-large
-color: $inherited.colors.text
-align-self: center
-
--- ftd.text: $navbar-desktop.cta-text-8
-role: $inherited.types.label-large
-color: $inherited.colors.text
-align-self: center
-
--- ftd.text: $navbar-desktop.cta-text-9
-role: $inherited.types.label-large
-color: $inherited.colors.text
-align-self: center
-
--- ftd.text: $navbar-desktop.cta-text-10
-role: $inherited.types.label-large
-color: $inherited.colors.text
+color: white
 align-self: center
 
 -- ftd.row:
 spacing.fixed.px: 8
 align-self: center
 
--- button: $navbar-desktop.cta-button-1
+-- button.button-5: $navbar-desktop.cta-button-1
 link: /
 
--- button: $navbar-desktop.cta-button-2
+-- button.button-5: $navbar-desktop.cta-button-2
 link: /
 
 -- end: ftd.row
@@ -325,35 +302,31 @@ link: /
 
 -- component footer:
 optional caption text:
-ftd.image-src logo: $assets.files.images.bd-logo.webp
-ftd.image-src icon-1: $assets.files.images.insta.png
-string url-1: /
-ftd.image-src icon-2: $assets.files.images.twit.webp
-string url-2: /
-ftd.image-src icon-3: $assets.files.images.email.webp
-string url-3: /
-ftd.image-src icon-4: $assets.files.images.tele.webp
-string url-4: /
-ftd.image-src icon-5: $assets.files.images.discord.webp
-string url-5: /
+ftd.image-src logo: $assets.files.images.web32.png
+ftd.image-src icon-1: $assets.files.images.insta.svg
+string url-1: https://www.instagram.com/w3kerala/
+ftd.image-src icon-2: $assets.files.images.tele.svg
+string url-2: https://t.me/+uaSevLq5p0I5NWVl
+ftd.image-src icon-3: $assets.files.images.whatsapp.svg
+string url-3: https://chat.whatsapp.com/Jp7px9EvNbN0v4UNNTdBjY
+ftd.image-src icon-4: $assets.files.images.twit.svg
+string url-4: https://twitter.com/Web3_kerala?s=20
+ftd.image-src icon-5: $assets.files.images.email.png
+string url-5: mailto:Web3kerala@gmail.com
 ftd.image-src icon-6: $assets.files.images.linkedIn.png
-string url-6: /
-
-
+string url-6: https://www.linkedin.com/company/web3-kerala/
 
 -- ftd.column:
 align-self: center
 align-content: center
 width: fill-container
-margin-vertical.px: 100
+margin-vertical.vh: 6
 
 -- ftd.row:
-margin-top.px: 16
-spacing.fixed.px: 10
+margin-vertical.vh: 4
 
 -- ftd.image: $footer.logo
-height.fixed.px: 100
-margin-vertical.vh: 4
+height.fixed.vh: 10
 
 -- end: ftd.row
 
@@ -364,7 +337,7 @@ align-content: center
 spacing.fixed.px: 24
 padding-bottom.px: 27
 border-bottom-width.px: 2
-color: $inherited.colors.text
+color: white
 
 -- ftd.image: $footer.icon-1
 height.fixed.px: 32
@@ -414,11 +387,11 @@ link: $footer.url-6
 -- component hero:
 caption title:
 string heading:
+string cta-button-1:
 body content:
 
 -- ftd.column:
 width: fill-container
-align-content: center
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
@@ -430,38 +403,51 @@ padding-horizontal.px: 20
 
 -- ftd.text: $hero.heading
 role: $inherited.types.heading-hero
-color: White
+css: [ gradient-1.css ]
+classes: color-2
 margin-bottom.px: 20
 
 -- ftd.text: $hero.title
 role: $inherited.types.heading-medium
 color: White
 
+-- button.button-5: $hero.cta-button-1
+link: /
+
 -- ftd.text: $hero.content
 margin-vertical.px: 12
 role: $inherited.types.heading-small
 color: White
+
+-- web-components.count-down:
 
 -- end: ftd.column
 
 -- end: ftd.column
 
 -- ftd.row:
+width: fill-container
 if: { ftd.device == "desktop" }
-margin-top.px: 100
 
 -- ftd.column:
+padding.vh: 16
 width: fill-container
-;;background.image: $assets.files.images.backwaters.jpg
+align-content: center
 
 -- ftd.text: $hero.heading
 role: $inherited.types.heading-hero
-color: White
+style: bold
+text-align: center
+css: [ gradient-1.css ]
+classes: color-2
 margin-bottom.px: 20
 
 -- ftd.text: $hero.title
 role: $inherited.types.heading-large
 color: White
+
+-- button.button-5: $hero.cta-button-1
+link: /
 
 -- ftd.text: $hero.content
 role: $inherited.types.heading-small
@@ -485,34 +471,36 @@ color: White
 
 
 -- component carousel:
+caption title:
 children wrap:
-integer $active-item:
-integer max: 5
-integer min: 1
-boolean small-height: false
 
 -- ftd.column:
 width: fill-container
-background.solid: $inherited.colors.background.step-1
+
+-- ftd.column:
 align-content: center
+margin-vertical.vh if { ftd.device == "desktop" } : 10
+margin-vertical.vh if { ftd.device == "mobile" } : 1
+
+-- ftd.text: $carousel.title
+role: $inherited.types.heading-large
+margin-top.vh: 1
+color: White
 
 -- ftd.row:
-if: { ftd.device != "mobile" }
+if: { ftd.device == "desktop" }
 width: fill-container
 padding-horizontal.px: 12
 align-content: center
 
 -- ftd.row:
 width: fill-container
-spacing.fixed.px: 24
-padding-vertical.px if { !carousel.small-height }: 40
+padding-vertical.px: 40
 padding-horizontal.px: 12
 align-content: center
 
 -- ftd.image:
-if: { carousel.active-item != carousel.min }
-src: $assets.files.images.right.svg
-$on-click$: $common.decrement-and-clamp($a = $carousel.active-item, by = 1, min = $carousel.min, max = $carousel.max)
+src: $assets.files.images.left.svg
 align-self: center
 border-radius.px: 100
 width.fixed.px: 40
@@ -520,75 +508,44 @@ height.fixed.px: 40
 background.solid: $inherited.colors.border
 anchor: parent
 left.px: 10
-top.px if { carousel.small-height }: 130
 z-index: 1000
 padding.px: 4
 
--- ftd.image:
-if: { carousel.active-item == carousel.min }
-src: $assets.files.images.right.svg
-align-self: center
-border-radius.px: 100
-width.fixed.px: 40
-height.fixed.px: 40
-background.solid: $inherited.colors.border
-anchor: parent
-left.px: 10
-top.px if { carousel.small-height }: 130
-z-index: 1000
-padding.px: 4
-opacity: 0.5
-
--- ftd.column:
+-- ftd.row:
 children: $carousel.wrap
+spacing.fixed.px: 32
+width: fill-container
+align-content: center
+padding-horizontal.px: 12
+
+-- end: ftd.row
+
+-- ftd.image:
+src: $assets.files.images.right.svg
+align-self: center
+border-radius.px: 100
+width.fixed.px: 40
+height.fixed.px: 40
+background.solid: $inherited.colors.border
+right.px: 10
+anchor: parent
+z-index: 1000
+padding.px: 4
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+children: $carousel.wrap
+spacing: space-evenly
 width: fill-container
 align-content: center
 padding-horizontal.px: 12
 z-index: 0
 
 -- end: ftd.column
-
--- ftd.image:
-if: { carousel.active-item != carousel.max }
-src: $assets.files.images.left.svg
-$on-click$: $common.increment-and-clamp($a = $carousel.active-item, by = 1, min = $carousel.min, max = $carousel.max)
-align-self: center
-border-radius.px: 100
-width.fixed.px: 40
-height.fixed.px: 40
-background.solid: $inherited.colors.border
-right.px: 10
-top.px if { carousel.small-height }: 130
-anchor: parent
-z-index: 1000
-padding.px: 4
-
--- ftd.image:
-if: { carousel.active-item == carousel.max }
-src: $assets.files.images.left.svg
-align-self: center
-border-radius.px: 100
-width.fixed.px: 40
-height.fixed.px: 40
-background.solid: $inherited.colors.border
-anchor: parent
-right.px: 10
-top.px if { carousel.small-height }: 130
-z-index: 1000
-padding.px: 4
-opacity: 0.5
-
--- end: ftd.row
-
--- end: ftd.row
-
--- ftd.column:
-if: { ftd.device == "mobile"}
-children: $carousel.wrap
-width: fill-container
-padding-horizontal.px: 12
-padding-vertical.px: 2
-z-index: 0
 
 -- end: ftd.column
 
@@ -605,22 +562,236 @@ z-index: 0
 
 
 
--- component button:
-caption title: 
-string link:
+
+
+
+
+
+
+
+
+
+
+
+-- component blog-1:
+string title:
+integer number:
+caption head:
+ftd.image-src pic:
+body body:
+optional string cta-text:
+optional integer index:
+optional integer reset:
+
+-- ftd.column:
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.percent if { ftd.device == "desktop" }: 25
+border-width.px: 8
+border-color: White
+
+-- ftd.image:
+src: $blog-1.pic
+width: fill-container
+
+-- ftd.column:
+padding.px: 24
+
+-- ftd.text: $blog-1.head
+role: $inherited.types.copy-regular
+style: bold
+color: $inherited.colors.custom.three
+margin-bottom.px: 4
+
+-- ftd.text: $blog-1.title
+role: $inherited.types.label-large
+style: bold
+color: white
+margin-bottom.px: 12
+
+-- ftd.text: $blog-1.body
+role: $inherited.types.label-large
+color: white
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: blog-1
+
+
+
+
+
+
+
+
+
+
+-- component about:
+ftd.image-src pic:
+caption title:
+body body:
+
+-- ftd.column:
+padding-horizontal.vw if { ftd.device == "desktop" }: 10
+margin-vertical.vh if { ftd.device == "desktop" } : 5
+margin-vertical.vh if { ftd.device == "mobile" } : 1
+id: aboutus
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+
+-- ftd.column:
+margin-vertical.vh: 4
+margin-horizontal.px: 32
+
+-- ftd.text: $about.title
+role: $inherited.types.heading-large
+color: White
+
+-- ftd.text: $about.body
+role: $inherited.types.copy-regular
+color: White
+opacity: 0.7
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $about.pic
+width: fill-container
+align-self: center
+
+-- end: ftd.column
 
 -- ftd.row:
-padding-horizontal.px: 12
-padding-vertical.px: 16
-border-radius.px: 32
-background.solid: Yellow
-link: $button.link
+if: { ftd.device == "desktop" }
 
--- ftd.text: $button.title
+-- ftd.column:
+align-self: center
+margin-left.percent: 8
+margin-right.percent: 12
+
+-- ftd.text: $about.title
+role: $inherited.types.heading-large
+color: White
+
+-- ftd.text: $about.body
+role: $inherited.types.copy-regular
+color: White
+opacity: 0.7
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $about.pic
+width.fixed.percent: 50
+align-self: center
+
 
 -- end: ftd.row
 
--- end: button
+-- end: ftd.column
+
+-- end: about
+
+
+
+
+
+
+
+
+
+-- ftd.linear-gradient lg:
+direction: bottom-left
+colors: $color-values-2
+
+-- ftd.linear-gradient-color list color-values-2:
+
+-- ftd.linear-gradient-color: #0800f5
+
+-- ftd.linear-gradient-color: #00bbff
+
+-- end: color-values-2
+
+
+
+
+
+
+
+
+
+-- component sponsor-section:
+caption title:
+children card:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+margin-vertical.vh: 1
+
+-- ftd.text: $sponsor-section.title
+role: $inherited.types.heading-large
+margin-vertical.vh: 1
+color: White
+
+-- ftd.row:
+spacing.fixed.px: 24
+width: fill-container
+align-content: center
+children: $sponsor-section.card
+wrap: true
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: sponsor-section
+
+
+
+
+
+
+
+
+
+
+-- component sponsor-card:
+caption name:
+ftd.image-src logo:
+
+-- ftd.column:
+width.fixed.px: 300
+height.fixed.px: 200
+background.solid: white
+border-radius.px: 20
+padding.px: 20
+align-content: center
+
+-- ftd.image:
+src: $sponsor-card.logo
+height.fixed.px: 80
+
+-- ftd.text: $sponsor-card.name
+role: $inherited.types.heading-small
+color: black
+
+-- end: ftd.column
+
+-- end: sponsor-card
+
+
+
+
+
+
+
+
+
+
+
 
 
 
