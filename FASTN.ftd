@@ -1,7 +1,7 @@
 -- import: fastn
 
 -- fastn.package: sarvom.github.io/web3event
-favicon: /-/sarvom.github.io/web3event/favicon.ico
+favicon: /-/sarvom.github.io/web3event/images/web32.png
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
