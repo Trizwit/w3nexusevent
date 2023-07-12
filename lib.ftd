@@ -247,9 +247,15 @@ optional string cta-text-9:
 optional string cta-text-10:
 optional string cta-button-1:
 optional string cta-button-2:
+boolean $is-active-1: false
+boolean $is-active-2: false
+boolean $is-active-3: false
+boolean $is-active-4: false
+boolean $is-active-5: false
 
 -- ftd.row:
 width: fill-container
+spacing: space-between
 padding.vh: 1
 height.fixed.vh: 10
 ;;background.linear-gradient: $lg
@@ -265,8 +271,20 @@ align-self: center
 
 -- ftd.row:
 width: fill-container
+height: fill-container
 align-self: center
-spacing.fixed.percent: 8
+align-content: center
+spacing.fixed.percent: 12
+margin-horizontal.vh: 2
+
+-- ftd.column:
+height: fill-container
+align-content: center
+margin-horizontal.vh: 2
+border-bottom-width.px if { navbar-desktop.is-active-1}: 4
+border-color: #8F43EE
+$on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-1, v = false)
 
 -- ftd.text: $navbar-desktop.cta-text-1
 role: $inherited.types.label-large
@@ -274,6 +292,16 @@ style: semi-bold
 color: white
 align-self: center
 
+-- end: ftd.column
+
+-- ftd.column:
+height: fill-container
+align-content: center
+margin-horizontal.vh: 2
+border-bottom-width.px if { navbar-desktop.is-active-2}: 4
+border-color: #8F43EE
+$on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-2, v = false)
 
 -- ftd.text: $navbar-desktop.cta-text-2
 role: $inherited.types.label-large
@@ -281,11 +309,33 @@ style: semi-bold
 color: white
 align-self: center
 
+-- end: ftd.column
+
+-- ftd.column:
+height: fill-container
+align-content: center
+margin-horizontal.vh: 2
+border-bottom-width.px if { navbar-desktop.is-active-3}: 4
+border-color: #8F43EE
+$on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-3, v = false)
+
 -- ftd.text: $navbar-desktop.cta-text-3
 role: $inherited.types.label-large
 style: semi-bold
 color: white
 align-self: center
+
+-- end: ftd.column
+
+-- ftd.column:
+height: fill-container
+align-content: center
+margin-horizontal.vh: 2
+border-bottom-width.px if { navbar-desktop.is-active-4}: 4
+border-color: #8F43EE
+$on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-4, v = false)
 
 -- ftd.text: $navbar-desktop.cta-text-4
 role: $inherited.types.label-large
@@ -293,18 +343,33 @@ style: semi-bold
 color: white
 align-self: center
 
+-- end: ftd.column
+
+-- ftd.column:
+height: fill-container
+align-content: center
+margin-horizontal.vh: 2
+border-bottom-width.px if { navbar-desktop.is-active-5}: 4
+border-color: #8F43EE
+$on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-5, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-5, v = false)
+
 -- ftd.text: $navbar-desktop.cta-text-5
 role: $inherited.types.label-large
 style: semi-bold
 color: white
 align-self: center
 
+-- end: ftd.column
+
 -- end: ftd.row
 
 -- ftd.row:
-width: fill-container
+width.fixed.percent: 50
 spacing.fixed.px: 8
 align-self: center
+align-content: right
+margin-right.vw: 4
 
 -- button.button-5: $navbar-desktop.cta-button-1
 link: /
@@ -410,6 +475,7 @@ body content:
 
 -- ftd.column:
 width: fill-container
+id: home
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
@@ -498,6 +564,7 @@ children wrap:
 
 -- ftd.column:
 width: fill-container
+id: speakers
 
 -- ftd.column:
 align-content: center
