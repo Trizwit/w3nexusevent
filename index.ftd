@@ -4,27 +4,34 @@
 -- lib.page:
 cta-text-1: Home
 cta-text-2: About
-cta-text-3: Sponsers
+cta-text-3: Sponsors
 cta-text-4: Agenda
 cta-text-5: Speakers
 cta-button-1: Get Your Tickets
 cta-button-2: Become a Sponser
 logo: $assets.files.images.web32.png
 
--- lib.hero: July 10-12,2023 
-heading: Web3 Innovater Nexus
+-- lib.hero: Web3 Innovators Nexus
+title: July 29, 2023, 3pm - 7pm
 cta-button-1: Register Now
 
-Welcome to the celebration of all the Web3 sides!
+Fostering the growth of startups in the transformative world of Web3.
 
 -- lib.about: About Web3 Innovator Nexus
 pic: $assets.files.images.web3-1.jpg
 
-Web3Kerala is a social community that connects everyone on Web3 in Kerala in a 
-contextually meaningful way. The community provides opportunity for individuals in the 
-Web3 space in Kerala to connect and uplift each and every member in the community.With an 
-objective to setup a Web3 ecosystem in Kerala to provide education and networking 
-opportunities to Web3Kerala members to build,grow, and scale Web3.
+Welcome to the Web3 Innovators Nexus, an event dedicated to fostering the growth of 
+startups in the transformative world of Web3.
+
+​At the Web3 Innovators Nexus, visionary entrepreneurs, technologists, investors, and 
+industry leaders come together to share insights and explore the limitless possibilities 
+of Web3 technologies.
+
+​Attend engaging keynote speeches, panel discussions, and fireside chats delivered by 
+influential leaders at the forefront of Web3 innovation. Gain invaluable insights and 
+inspiration from their experiences and successes.
+
+​Together, let's drive the evolution of Web3 technologies and unlock their true potential.
 
 -- lib.carousel: Speakers
 
@@ -72,6 +79,17 @@ designs from top NFT designers, our event is a celebration of digital art and in
 Get ready to immerse yourself in the world of digital art and witness the latest fashion 
 trends.
 
+-- lib.blog-1: Vijay Parvin
+pic: $assets.files.images.Vijay-Parvin.jpg
+title: BitsCrunch 
+number: 5
+cta-text: Learn more
+
+Experience the future of fashion at our Metaverse Fashion Show. Featuring awe-inspiring 
+designs from top NFT designers, our event is a celebration of digital art and innovation. 
+Get ready to immerse yourself in the world of digital art and witness the latest fashion 
+trends.
+
 -- end: lib.carousel
 
 -- lib.sponsor-section: Organized by
@@ -83,18 +101,45 @@ logo: $assets.files.images.web32.png
 
 -- lib.sponsor-section: In Assoication with
 
--- lib.sponsor-card: Web3 Kerala
-logo: $assets.files.images.web32.png
+-- lib.sponsor-card: Google Developers
+logo: $assets.files.images.google.png
 
--- lib.sponsor-card: Web3 Kerala
-logo: $assets.files.images.web32.png
+-- lib.sponsor-card: Wallet Hunter
+logo: $assets.files.images.wallethunter.jpg
 
--- lib.sponsor-card: Web3 Kerala
-logo: $assets.files.images.web32.png
+-- lib.sponsor-card: Kerala Startup Mission 
+logo: $assets.files.images.ksum.png
 
 -- lib.sponsor-card: Web3 Kerala
 logo: $assets.files.images.web32.png
  
 -- end: lib.sponsor-section
+
+-- ftd.row:
+width: fill-container
+wrap if { ftd.device == "mobile" } : true
+
+-- lib.sponsor-section: Infrastructure Parnter
+
+-- lib.sponsor-card: Zeeve
+logo: $assets.files.images.zeeve.png
+ 
+-- end: lib.sponsor-section
+
+-- lib.sponsor-section: Technical Partner
+
+-- lib.sponsor-card: Trizwit
+logo: $assets.files.images.trizwit.png
+ 
+-- end: lib.sponsor-section
+
+-- lib.sponsor-section: Academy Partner
+
+-- lib.sponsor-card: Tribe Academy
+logo: $assets.files.images.tribe.jpg
+ 
+-- end: lib.sponsor-section
+
+-- end: ftd.row
 
 -- end: lib.page

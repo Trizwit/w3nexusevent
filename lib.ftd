@@ -134,7 +134,7 @@ boolean $open: false
 -- ftd.column:
 padding.px: 20
 width: fill-container
-background.solid if { navbar-mobile.open }: Yellow
+background.solid: #FFFFFF55
 height: hug-content
 
 -- ftd.row:
@@ -163,39 +163,59 @@ $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- ftd.column:
 if: { navbar-mobile.open }
+margin-top.px: 16
 width: fill-container
 spacing: space-evenly
+align-content: left
+padding-left.px: 16
 
 -- ftd.text: $navbar-mobile.cta-text-1
 role: $inherited.types.label-large
+margin-top.px: 4
 color: white
+style: semi-bold
 
 
 -- ftd.text: $navbar-mobile.cta-text-2
 role: $inherited.types.label-large
+margin-top.px: 4
 color: white
+style: semi-bold
 
 
 -- ftd.text: $navbar-mobile.cta-text-3
 role: $inherited.types.label-large
+margin-top.px: 4
 color: white
+style: semi-bold
 
 
 -- ftd.text: $navbar-mobile.cta-text-4
 role: $inherited.types.label-large
+margin-top.px: 4
 color: white
+style: semi-bold
 
 
 -- ftd.text: $navbar-mobile.cta-text-5
 role: $inherited.types.label-large
+margin-top.px: 4
 color: white
+style: semi-bold
 
+-- ftd.row:
+width: fill-container
+margin-top.px: 8
+spacing.fixed.px: 8
+align-content: center
 
 -- button.button-2: $navbar-mobile.cta-button-1
 link: /
 
--- button.button-3: $navbar-mobile.cta-button-2
+-- button.button-2: $navbar-mobile.cta-button-2
 link: /
+
+-- end: ftd.row
 
 -- end: ftd.column
 
@@ -232,7 +252,8 @@ optional string cta-button-2:
 width: fill-container
 padding.vh: 1
 height.fixed.vh: 10
-background.linear-gradient: $lg
+;;background.linear-gradient: $lg
+background.solid: #FFFFFF55
 z-index: 99999
 sticky: true
 
@@ -245,35 +266,43 @@ align-self: center
 -- ftd.row:
 width: fill-container
 align-self: center
-spacing: space-evenly
+spacing.fixed.percent: 8
 
 -- ftd.text: $navbar-desktop.cta-text-1
 role: $inherited.types.label-large
+style: semi-bold
 color: white
 align-self: center
 
 
 -- ftd.text: $navbar-desktop.cta-text-2
 role: $inherited.types.label-large
+style: semi-bold
 color: white
 align-self: center
 
 -- ftd.text: $navbar-desktop.cta-text-3
 role: $inherited.types.label-large
+style: semi-bold
 color: white
 align-self: center
 
 -- ftd.text: $navbar-desktop.cta-text-4
 role: $inherited.types.label-large
+style: semi-bold
 color: white
 align-self: center
 
 -- ftd.text: $navbar-desktop.cta-text-5
 role: $inherited.types.label-large
+style: semi-bold
 color: white
 align-self: center
 
+-- end: ftd.row
+
 -- ftd.row:
+width: fill-container
 spacing.fixed.px: 8
 align-self: center
 
@@ -282,8 +311,6 @@ link: /
 
 -- button.button-5: $navbar-desktop.cta-button-2
 link: /
-
--- end: ftd.row
 
 -- end: ftd.row
 
@@ -303,18 +330,12 @@ link: /
 -- component footer:
 optional caption text:
 ftd.image-src logo: $assets.files.images.web32.png
+string url: https://web3kerala.com/
 ftd.image-src icon-1: $assets.files.images.insta.svg
-string url-1: https://www.instagram.com/w3kerala/
-ftd.image-src icon-2: $assets.files.images.tele.svg
-string url-2: https://t.me/+uaSevLq5p0I5NWVl
-ftd.image-src icon-3: $assets.files.images.whatsapp.svg
-string url-3: https://chat.whatsapp.com/Jp7px9EvNbN0v4UNNTdBjY
-ftd.image-src icon-4: $assets.files.images.twit.svg
-string url-4: https://twitter.com/Web3_kerala?s=20
-ftd.image-src icon-5: $assets.files.images.email.png
-string url-5: mailto:Web3kerala@gmail.com
-ftd.image-src icon-6: $assets.files.images.linkedIn.png
-string url-6: https://www.linkedin.com/company/web3-kerala/
+string url-1: https://www.instagram.com/web3_innovator_nexus/
+ftd.image-src icon-2: $assets.files.images.twit.svg
+string url-2: https://twitter.com/Web3_Innovator
+
 
 -- ftd.column:
 align-self: center
@@ -327,6 +348,7 @@ margin-vertical.vh: 4
 
 -- ftd.image: $footer.logo
 height.fixed.vh: 10
+link: $footer.url
 
 -- end: ftd.row
 
@@ -349,25 +371,21 @@ height.fixed.px: 32
 width.fixed.px: 32
 link: $footer.url-2
 
--- ftd.image: $footer.icon-3
-height.fixed.px: 32
-width.fixed.px: 32
-link: $footer.url-3
+-- end: ftd.row
 
--- ftd.image: $footer.icon-4
-height.fixed.px: 32
-width.fixed.px: 32
-link: $footer.url-4
+-- ftd.row:
+margin-top.vh: 1
+spacing.fixed.vh: 2
 
--- ftd.image: $footer.icon-5
-height.fixed.px: 32
-width.fixed.px: 32
-link: $footer.url-5
+-- ftd.text:  Made with FASTN
+role: $inherited.types.label-large
+style: semi-bold
+color: white
 
--- ftd.image: $footer.icon-6
-height.fixed.px: 32
-width.fixed.px: 32
-link: $footer.url-6
+-- ftd.text:  by Team Trizwit
+role: $inherited.types.label-large
+style: semi-bold
+color: white
 
 -- end: ftd.row
 
@@ -385,8 +403,8 @@ link: $footer.url-6
 
 
 -- component hero:
-caption title:
-string heading:
+caption heading:
+string title:
 string cta-button-1:
 body content:
 
@@ -400,26 +418,29 @@ margin-top.px: 24
 -- ftd.column:
 width: fill-container
 padding-horizontal.px: 20
+align-content: center
 
 -- ftd.text: $hero.heading
 role: $inherited.types.heading-hero
-css: [ gradient-1.css ]
-classes: color-2
-margin-bottom.px: 20
+style: bold
+text-align: center
+color: white
 
 -- ftd.text: $hero.title
+margin-vertical.vh: 1
 role: $inherited.types.heading-medium
 color: White
 
--- button.button-5: $hero.cta-button-1
+-- button.button-3: $hero.cta-button-1
 link: /
 
+-- web-components.count-down:
+
 -- ftd.text: $hero.content
-margin-vertical.px: 12
+margin-vertical.vh: 1
 role: $inherited.types.heading-small
 color: White
-
--- web-components.count-down:
+text-align: center
 
 -- end: ftd.column
 
@@ -438,18 +459,19 @@ align-content: center
 role: $inherited.types.heading-hero
 style: bold
 text-align: center
-css: [ gradient-1.css ]
-classes: color-2
-margin-bottom.px: 20
+color: white
 
 -- ftd.text: $hero.title
 role: $inherited.types.heading-large
 color: White
 
--- button.button-5: $hero.cta-button-1
+-- button.button-4: $hero.cta-button-1
 link: /
 
+-- web-components.count-down:
+
 -- ftd.text: $hero.content
+margin-top.vh: 1
 role: $inherited.types.heading-small
 color: White
 
@@ -539,7 +561,7 @@ padding.px: 4
 -- ftd.column:
 if: { ftd.device == "mobile" }
 children: $carousel.wrap
-spacing: space-evenly
+spacing.fixed.px: 32
 width: fill-container
 align-content: center
 padding-horizontal.px: 12
@@ -587,7 +609,8 @@ optional integer reset:
 background.solid: $inherited.colors.background.step-1
 max-width.fixed.percent if { ftd.device == "desktop" }: 25
 border-width.px: 8
-border-color: White
+border-radius.px: 16
+border-color: #2D2727
 
 -- ftd.image:
 src: $blog-1.pic
@@ -599,7 +622,7 @@ padding.px: 24
 -- ftd.text: $blog-1.head
 role: $inherited.types.copy-regular
 style: bold
-color: $inherited.colors.custom.three
+color: #8F43EE
 margin-bottom.px: 4
 
 -- ftd.text: $blog-1.title
@@ -633,7 +656,7 @@ caption title:
 body body:
 
 -- ftd.column:
-padding-horizontal.vw if { ftd.device == "desktop" }: 10
+padding-horizontal.vw if { ftd.device == "desktop" }: 5
 margin-vertical.vh if { ftd.device == "desktop" } : 5
 margin-vertical.vh if { ftd.device == "mobile" } : 1
 id: aboutus
@@ -658,8 +681,9 @@ opacity: 0.7
 
 -- ftd.image:
 src: $about.pic
-width: fill-container
+width.fixed.percent: 90
 align-self: center
+border-radius.px: 20
 
 -- end: ftd.column
 
@@ -668,14 +692,16 @@ if: { ftd.device == "desktop" }
 
 -- ftd.column:
 align-self: center
-margin-left.percent: 8
-margin-right.percent: 12
+margin-left.percent: 4
+margin-right.percent: 6
 
 -- ftd.text: $about.title
 role: $inherited.types.heading-large
 color: White
 
 -- ftd.text: $about.body
+margin-left.percent: 4
+margin-right.percent: 6
 role: $inherited.types.copy-regular
 color: White
 opacity: 0.7
@@ -684,9 +710,9 @@ opacity: 0.7
 
 -- ftd.image:
 src: $about.pic
-width.fixed.percent: 50
+width.fixed.percent: 40
 align-self: center
-
+border-radius.px: 20
 
 -- end: ftd.row
 
@@ -708,9 +734,9 @@ colors: $color-values-2
 
 -- ftd.linear-gradient-color list color-values-2:
 
--- ftd.linear-gradient-color: #0800f5
+-- ftd.linear-gradient-color: #F20487
 
--- ftd.linear-gradient-color: #00bbff
+-- ftd.linear-gradient-color: #E10376
 
 -- end: color-values-2
 
@@ -733,11 +759,11 @@ margin-vertical.vh: 1
 
 -- ftd.text: $sponsor-section.title
 role: $inherited.types.heading-large
-margin-vertical.vh: 1
+margin-vertical.vh: 2
 color: White
 
 -- ftd.row:
-spacing.fixed.px: 24
+spacing.fixed.px: 32
 width: fill-container
 align-content: center
 children: $sponsor-section.card
@@ -775,8 +801,10 @@ src: $sponsor-card.logo
 height.fixed.px: 80
 
 -- ftd.text: $sponsor-card.name
-role: $inherited.types.heading-small
-color: black
+role: $inherited.types.heading-tiny
+color: #8F43EE
+style: semi-bold
+margin-top.px: 16
 
 -- end: ftd.column
 

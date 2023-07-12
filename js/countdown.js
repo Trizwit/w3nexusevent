@@ -2,11 +2,21 @@ class CountDown extends HTMLElement {
   constructor() {
     super();
     const shadowRoot = this.attachShadow({ mode: 'open' });
-    this.targetDate = this.getAttribute('target-date');
+
+    // Set the target date (YYYY-MM-DD format)
+    this.targetDate = '2023-07-29';
+
     this.countdownElement = document.createElement('div');
-    this.countdownElement.textContent = 'Countdown:';
+
+   
+    this.countdownElement.style.fontFamily = "'Montserrat', 'Arial', sans-serif"; // Change the font family
+    this.countdownElement.style.color = 'White'; 
+    this.countdownElement.style.fontSize = '36px'; 
+    this.countdownElement.style.margin = '10px'; // Add margin
 
     shadowRoot.appendChild(this.countdownElement);
+
+
   }
 
   connectedCallback() {
@@ -20,14 +30,13 @@ class CountDown extends HTMLElement {
     }, 1000);
   }
 
-
   updateCountdown() {
     const currentDate = new Date();
     const target = new Date(this.targetDate);
     const timeDifference = target - currentDate;
 
     if (timeDifference < 0) {
-      this.countdownElement.textContent = 'Target date has already passed.';
+      this.countdownElement.textContent = '';
       return;
     }
 
@@ -36,7 +45,7 @@ class CountDown extends HTMLElement {
     const minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
     const seconds = Math.floor((timeDifference / 1000) % 60);
 
-    this.countdownElement.textContent = `Countdown: ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+    this.countdownElement.textContent = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
   }
 }
 
