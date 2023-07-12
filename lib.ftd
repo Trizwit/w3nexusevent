@@ -20,7 +20,7 @@ children c:
 
 -- ftd.column:
 width: fill-container
-background.image: $assets.files.images.bg-3.jpg
+background.solid: #111111
 
 -- navbar: 
 logo: $page.logo
@@ -251,11 +251,11 @@ boolean $is-active-5: false
 
 -- ftd.row:
 width: fill-container
-spacing: space-between
+spacing.fixed.px: 16
 padding.vh: 1
 height.fixed.vh: 10
-;;background.linear-gradient: $lg
 background.solid: #181939
+align-content: center
 z-index: 99999
 sticky: true
 
@@ -264,14 +264,6 @@ src: $navbar-desktop.logo
 height.fixed.px: 64
 padding.vh: 1
 align-self: center
-
--- ftd.row:
-width: fill-container
-height: fill-container
-align-self: center
-align-content: center
-spacing.fixed.percent: 12
-margin-horizontal.vh: 2
 
 -- ftd.column:
 height: fill-container
@@ -358,11 +350,8 @@ align-self: center
 
 -- end: ftd.column
 
--- end: ftd.row
-
 -- ftd.row:
-width.fixed.percent: 50
-spacing.fixed.px: 8
+spacing.fixed.px: 16
 align-self: center
 align-content: right
 margin-right.vw: 4
@@ -471,11 +460,12 @@ body content:
 
 -- ftd.column:
 width: fill-container
+background.image: $assets.files.images.bg.png
 id: home
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
-margin-top.px: 24
+margin-vertical.px: 24
 align-content: center
 
 -- ftd.column:
@@ -541,8 +531,6 @@ color: White
 
 -- web-components.count-down:
 
-
-
 -- end: ftd.column
 
 -- end: ftd.row
@@ -578,29 +566,17 @@ role: $inherited.types.heading-large
 margin-top.vh: 1
 color: White
 
--- ftd.row:
+-- ftd.column:
 if: { ftd.device == "desktop" }
 width: fill-container
 padding-horizontal.px: 12
 align-content: center
 
--- ftd.row:
+-- ftd.column:
 width: fill-container
-padding-vertical.px: 40
+padding-vertical.px: 24
 padding-horizontal.px: 12
 align-content: center
-
--- ftd.image:
-src: $assets.files.images.left.svg
-align-self: center
-border-radius.px: 100
-width.fixed.px: 40
-height.fixed.px: 40
-background.solid: $inherited.colors.border
-anchor: parent
-left.px: 10
-z-index: 1000
-padding.px: 4
 
 -- ftd.row:
 children: $carousel.wrap
@@ -608,24 +584,13 @@ spacing.fixed.px: 32
 width: fill-container
 align-content: center
 padding-horizontal.px: 12
+wrap: true
 
 -- end: ftd.row
 
--- ftd.image:
-src: $assets.files.images.right.svg
-align-self: center
-border-radius.px: 100
-width.fixed.px: 40
-height.fixed.px: 40
-background.solid: $inherited.colors.border
-right.px: 10
-anchor: parent
-z-index: 1000
-padding.px: 4
+-- end: ftd.column
 
--- end: ftd.row
-
--- end: ftd.row
+-- end: ftd.column
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
@@ -669,14 +634,14 @@ string title:
 integer number:
 caption head:
 ftd.image-src pic:
-body body:
+optional body body:
 optional string cta-text:
 optional integer index:
 optional integer reset:
 
 -- ftd.column:
 background.solid: #00000088
-max-width.fixed.percent if { ftd.device == "desktop" }: 25
+width.fixed.percent if { ftd.device == "desktop" }: 25
 border-radius.px: 16
 
 -- ftd.image:
@@ -700,10 +665,6 @@ style: bold
 color: white
 margin-bottom.px: 12
 
--- ftd.text: $blog-1.body
-role: $inherited.types.label-large
-color: white
-
 -- end: ftd.column
 
 -- end: ftd.column
@@ -726,7 +687,8 @@ body body:
 
 -- ftd.column:
 padding-horizontal.vw if { ftd.device == "desktop" }: 5
-margin-vertical.vh if { ftd.device == "desktop" } : 5
+margin-top.vh if { ftd.device == "desktop" } : 10
+margin-bottom.vh if { ftd.device == "desktop" } : 5
 margin-vertical.vh if { ftd.device == "mobile" } : 1
 id: aboutus
 
@@ -734,17 +696,18 @@ id: aboutus
 if: { ftd.device == "mobile" }
 
 -- ftd.column:
-margin-vertical.vh: 4
+margin-vertical.px: 32
 margin-horizontal.px: 32
 
 -- ftd.text: $about.title
 role: $inherited.types.heading-large
-color: White
+color: #f20487
 
 -- ftd.text: $about.body
 role: $inherited.types.copy-regular
 color: White
-opacity: 0.7
+;;text-align: justify
+opacity: 0.8
 
 -- end: ftd.column
 
@@ -766,14 +729,15 @@ margin-right.percent: 6
 
 -- ftd.text: $about.title
 role: $inherited.types.heading-large
-color: White
+color: #f20487
 
 -- ftd.text: $about.body
 margin-left.percent: 4
-margin-right.percent: 6
+margin-right.percent: 10
 role: $inherited.types.copy-regular
+text-align: justify
 color: White
-opacity: 0.7
+opacity: 0.8
 
 -- end: ftd.column
 
@@ -861,21 +825,24 @@ boolean $is-active: false
 -- ftd.column:
 width.fixed.px: 300
 height.fixed.px: 200
-background.solid: #FFFFFF44
+background.solid: #FFFFFFEE
+border-width.px: 4
+border-color if { !sponsor-card.is-active}: White
+border-color if { sponsor-card.is-active} : #f20487
 border-radius.px: 20
 align-content: center
 padding.px: 20
 $on-mouse-enter$: $ftd.set-bool($a = $sponsor-card.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $sponsor-card.is-active, v = false)
+shadow: $common.box
 
 -- ftd.image:
 src: $sponsor-card.logo
 height.fixed.px: 80
 
 -- ftd.text: $sponsor-card.name
-if: {sponsor-card.is-active}
 role: $inherited.types.heading-tiny
-color: #f20487
+color: #181939
 style: semi-bold
 margin-top.px: 16
 

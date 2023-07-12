@@ -111,7 +111,7 @@ class CountDown extends HTMLElement {
     if (screenWidth <= 320) {
       container.style.width = '80vw';
       container.style.height = '8vh';
-      countdownText.style.fontSize = '10px';
+      countdownText.style.fontSize = '12px';
     }
   }
   
