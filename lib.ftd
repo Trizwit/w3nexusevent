@@ -476,11 +476,13 @@ id: home
 -- ftd.column:
 if: { ftd.device == "mobile" }
 margin-top.px: 24
+align-content: center
 
 -- ftd.column:
 width: fill-container
-padding-horizontal.px: 20
+padding-horizontal.vw: 5
 align-content: center
+align-self: center
 
 -- ftd.text: $hero.heading
 role: $inherited.types.heading-hero

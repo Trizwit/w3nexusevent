@@ -67,28 +67,54 @@ class CountDown extends HTMLElement {
 
   updateResponsiveStyles() {
     const container = this.shadowRoot.querySelector('div');
-    const countdownText = this.shadowRoot.querySelector('div > div');
-
+  
     // Reset the styles to the default values
     container.style.width = '60vw';
     container.style.height = '15vh';
+    container.style.marginLeft = 'auto';
+    container.style.marginRight = 'auto';
+    container.style.display = 'flex';
+    container.style.justifyContent = 'center';
+    container.style.alignItems = 'center';
+  
+    const countdownText = this.shadowRoot.querySelector('div > div');
+  
     countdownText.style.fontSize = '36px';
-
+  
     // Adjust styles based on the screen width
     const screenWidth = window.innerWidth;
-
+  
     if (screenWidth <= 768) {
       container.style.width = '80vw';
       container.style.height = '10vh';
-      countdownText.style.fontSize = '24px';
+      countdownText.style.fontSize = '22px';
     }
 
-    if (screenWidth <= 400) {
-      container.style.width = '90vw';
+    if (screenWidth <= 570) {
+      container.style.width = '80vw';
       container.style.height = '8vh';
-      countdownText.style.fontSize = '18px';
+      countdownText.style.fontSize = '16px';
+    }
+  
+    if (screenWidth <= 425) {
+      container.style.width = '80vw';
+      container.style.height = '8vh';
+      countdownText.style.fontSize = '15px';
+    }
+
+    if (screenWidth <= 375) {
+      container.style.width = '80vw';
+      container.style.height = '8vh';
+      countdownText.style.fontSize = '14px';
+    }
+
+    if (screenWidth <= 320) {
+      container.style.width = '80vw';
+      container.style.height = '8vh';
+      countdownText.style.fontSize = '10px';
     }
   }
+  
 }
 
 customElements.define('count-down', CountDown);
