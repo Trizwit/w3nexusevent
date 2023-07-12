@@ -677,10 +677,7 @@ optional integer reset:
 -- ftd.column:
 background.solid: #00000088
 max-width.fixed.percent if { ftd.device == "desktop" }: 25
-border-top-left-radius.px: 16
-border-top-right-radius.px: 16
-border-bottom-left-radius.px: 20
-border-bottom-right-radius.px: 20
+border-radius.px: 16
 
 -- ftd.image:
 src: $blog-1.pic
@@ -864,7 +861,7 @@ boolean $is-active: false
 -- ftd.column:
 width.fixed.px: 300
 height.fixed.px: 200
-background.solid: #00000066
+background.solid: #FFFFFF44
 border-radius.px: 20
 align-content: center
 padding.px: 20

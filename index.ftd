@@ -58,7 +58,7 @@ Get ready to immerse yourself in the world of digital art and witness the latest
 trends.
 
 -- lib.blog-1: Jozef Jagan
-pic: $assets.files.images.Jozef.jpg
+pic: $assets.files.images.Jozef.png
 title: Wallet Hunter
 number: 3
 cta-text: Learn more
@@ -69,7 +69,7 @@ Get ready to immerse yourself in the world of digital art and witness the latest
 trends.
 
 -- lib.blog-1: Mirzad
-pic: $assets.files.images.Mirzad.jpg
+pic: $assets.files.images.Mirzad.png
 title: Tribe Academy
 number: 4
 cta-text: Learn more
