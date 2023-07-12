@@ -99,7 +99,7 @@ boolean $is-active: false
 
 -- ftd.row:
 margin-vertical.px: 24
-padding-horizontal.px: 12
+padding-horizontal.px: 24
 padding-vertical.px: 16
 border-radius.px: 10
 background.solid if { button-4.is-active} : White
