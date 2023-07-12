@@ -862,7 +862,7 @@ boolean $is-active: false
 -- ftd.column:
 width.fixed.px: 300
 height.fixed.px: 200
-background.solid: #FFFFFF66
+background.solid: #00000066
 border-radius.px: 20
 align-content: center
 padding.px: 20

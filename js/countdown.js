@@ -62,7 +62,7 @@ class CountDown extends HTMLElement {
     const minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
     const seconds = Math.floor((timeDifference / 1000) % 60);
 
-    this.countdownElement.textContent = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+    this.countdownElement.textContent = `${days} days : ${hours} hours : ${minutes} minutes : ${seconds} seconds`;
   }
 
   updateResponsiveStyles() {
