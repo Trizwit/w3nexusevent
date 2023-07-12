@@ -129,7 +129,7 @@ logo: $assets.files.images.zeeve.png
 -- lib.sponsor-section: Technical Partner
 
 -- lib.sponsor-card: Trizwit
-logo: $assets.files.images.trizwit.png
+logo: $assets.files.images.Trizwit.png
  
 -- end: lib.sponsor-section
 
