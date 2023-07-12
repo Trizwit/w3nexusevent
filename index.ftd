@@ -9,7 +9,7 @@ cta-text-4: Agenda
 cta-text-5: Speakers
 cta-button-1: Get Your Tickets
 cta-button-2: Become a Sponser
-logo: $assets.files.images.web32.png
+logo: $assets.files.images.logo.jpg
 
 -- lib.hero: Web3 Innovators Nexus
 title: July 29, 2023, 3pm - 7pm
@@ -105,13 +105,13 @@ logo: $assets.files.images.web32.png
 logo: $assets.files.images.google.png
 
 -- lib.sponsor-card: Wallet Hunter
-logo: $assets.files.images.wallethunter.jpg
+logo: $assets.files.images.wallethunter.png
 
 -- lib.sponsor-card: Kerala Startup Mission 
 logo: $assets.files.images.ksum.png
 
--- lib.sponsor-card: Web3 Kerala
-logo: $assets.files.images.web32.png
+-- lib.sponsor-card: Nefto
+logo: $assets.files.images.nefto.png
  
 -- end: lib.sponsor-section
 
@@ -136,7 +136,7 @@ logo: $assets.files.images.Trizwit.png
 -- lib.sponsor-section: Academy Partner
 
 -- lib.sponsor-card: Tribe Academy
-logo: $assets.files.images.tribe.jpg
+logo: $assets.files.images.tribe.png
  
 -- end: lib.sponsor-section
 

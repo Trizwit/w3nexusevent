@@ -6,20 +6,37 @@ class CountDown extends HTMLElement {
     // Set the target date (YYYY-MM-DD format)
     this.targetDate = '2023-07-29';
 
+    const container = document.createElement('div');
+
+    // Style the container
+    container.style.width = '60vw';
+    container.style.height = '15vh';
+    container.style.background = 'linear-gradient(to left, #f70068 0%,#441066 100%)';
+    container.style.borderRadius = '10px';
+    container.style.padding = '10px';
+    container.style.display = 'flex';
+    container.style.justifyContent = 'center';
+    container.style.alignItems = 'center';
+
     this.countdownElement = document.createElement('div');
 
-   
-    this.countdownElement.style.fontFamily = "'Montserrat', 'Arial', sans-serif"; // Change the font family
-    this.countdownElement.style.color = 'White'; 
-    this.countdownElement.style.fontSize = '36px'; 
-    this.countdownElement.style.margin = '10px'; // Add margin
+    // Style the countdown text
+    this.countdownElement.style.fontFamily = "'Montserrat', 'Arial', sans-serif";
+    this.countdownElement.style.color = 'white';
+    this.countdownElement.style.fontSize = '36px';
+    this.countdownElement.style.margin = '10px';
 
-    shadowRoot.appendChild(this.countdownElement);
+    container.appendChild(this.countdownElement);
+    shadowRoot.appendChild(container);
 
+    // Add event listener for window resize
+    window.addEventListener('resize', () => {
+      this.updateResponsiveStyles();
+    });
 
-  }
+    // Call the initial responsive styles update
+    this.updateResponsiveStyles();
 
-  connectedCallback() {
     this.startCountdown();
   }
 
@@ -46,6 +63,31 @@ class CountDown extends HTMLElement {
     const seconds = Math.floor((timeDifference / 1000) % 60);
 
     this.countdownElement.textContent = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+  }
+
+  updateResponsiveStyles() {
+    const container = this.shadowRoot.querySelector('div');
+    const countdownText = this.shadowRoot.querySelector('div > div');
+
+    // Reset the styles to the default values
+    container.style.width = '60vw';
+    container.style.height = '15vh';
+    countdownText.style.fontSize = '36px';
+
+    // Adjust styles based on the screen width
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 768) {
+      container.style.width = '80vw';
+      container.style.height = '10vh';
+      countdownText.style.fontSize = '24px';
+    }
+
+    if (screenWidth <= 480) {
+      container.style.width = '90vw';
+      container.style.height = '8vh';
+      countdownText.style.fontSize = '18px';
+    }
   }
 }
 

@@ -132,9 +132,9 @@ ftd.image-src close: $assets.files.images.close.svg
 boolean $open: false
 
 -- ftd.column:
-padding.px: 20
+padding.px: 8
 width: fill-container
-background.solid: #FFFFFF55
+background.solid: #181939
 height: hug-content
 
 -- ftd.row:
@@ -143,7 +143,8 @@ spacing: space-between
 
 -- ftd.image:
 src: $navbar-mobile.logo
-height.fixed.px: 64
+height.fixed.px: 40
+margin-left.px: 8
 
 -- ftd.image:
 if: { !navbar-mobile.open }
@@ -165,47 +166,42 @@ $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 if: { navbar-mobile.open }
 margin-top.px: 16
 width: fill-container
-spacing: space-evenly
+spacing.fixed.px: 8
 align-content: left
 padding-left.px: 16
 
 -- ftd.text: $navbar-mobile.cta-text-1
-role: $inherited.types.label-large
-margin-top.px: 4
+role: $inherited.types.heading-tiny
+margin-top.px: 8
 color: white
-style: semi-bold
 
 
 -- ftd.text: $navbar-mobile.cta-text-2
-role: $inherited.types.label-large
-margin-top.px: 4
+role: $inherited.types.heading-tiny
+margin-top.px: 8
 color: white
-style: semi-bold
 
 
 -- ftd.text: $navbar-mobile.cta-text-3
-role: $inherited.types.label-large
-margin-top.px: 4
+role: $inherited.types.heading-tiny
+margin-top.px: 8
 color: white
-style: semi-bold
 
 
 -- ftd.text: $navbar-mobile.cta-text-4
-role: $inherited.types.label-large
-margin-top.px: 4
+role: $inherited.types.heading-tiny
+margin-top.px: 8
 color: white
-style: semi-bold
 
 
 -- ftd.text: $navbar-mobile.cta-text-5
-role: $inherited.types.label-large
-margin-top.px: 4
+role: $inherited.types.heading-tiny
+margin-top.px: 8
 color: white
-style: semi-bold
 
 -- ftd.row:
 width: fill-container
-margin-top.px: 8
+margin-top.px: 24
 spacing.fixed.px: 8
 align-content: center
 
@@ -259,7 +255,7 @@ spacing: space-between
 padding.vh: 1
 height.fixed.vh: 10
 ;;background.linear-gradient: $lg
-background.solid: #FFFFFF55
+background.solid: #181939
 z-index: 99999
 sticky: true
 
@@ -282,7 +278,7 @@ height: fill-container
 align-content: center
 margin-horizontal.vh: 2
 border-bottom-width.px if { navbar-desktop.is-active-1}: 4
-border-color: #8F43EE
+border-color: #f20487
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-1, v = false)
 
@@ -299,7 +295,7 @@ height: fill-container
 align-content: center
 margin-horizontal.vh: 2
 border-bottom-width.px if { navbar-desktop.is-active-2}: 4
-border-color: #8F43EE
+border-color: #f20487
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-2, v = false)
 
@@ -316,7 +312,7 @@ height: fill-container
 align-content: center
 margin-horizontal.vh: 2
 border-bottom-width.px if { navbar-desktop.is-active-3}: 4
-border-color: #8F43EE
+border-color: #f20487
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-3, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-3, v = false)
 
@@ -333,7 +329,7 @@ height: fill-container
 align-content: center
 margin-horizontal.vh: 2
 border-bottom-width.px if { navbar-desktop.is-active-4}: 4
-border-color: #8F43EE
+border-color: #f20487
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-4, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-4, v = false)
 
@@ -350,7 +346,7 @@ height: fill-container
 align-content: center
 margin-horizontal.vh: 2
 border-bottom-width.px if { navbar-desktop.is-active-5}: 4
-border-color: #8F43EE
+border-color: #f20487
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-5, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-5, v = false)
 
@@ -394,7 +390,7 @@ link: /
 
 -- component footer:
 optional caption text:
-ftd.image-src logo: $assets.files.images.web32.png
+ftd.image-src logo: $assets.files.images.logo.jpg
 string url: https://web3kerala.com/
 ftd.image-src icon-1: $assets.files.images.insta.svg
 string url-1: https://www.instagram.com/web3_innovator_nexus/
@@ -500,13 +496,14 @@ color: White
 -- button.button-3: $hero.cta-button-1
 link: /
 
--- web-components.count-down:
-
 -- ftd.text: $hero.content
-margin-vertical.vh: 1
+margin-top.vh: 1
+margin-bottom.vh: 5
 role: $inherited.types.heading-small
 color: White
 text-align: center
+
+-- web-components.count-down:
 
 -- end: ftd.column
 
@@ -534,12 +531,15 @@ color: White
 -- button.button-4: $hero.cta-button-1
 link: /
 
--- web-components.count-down:
-
 -- ftd.text: $hero.content
 margin-top.vh: 1
+margin-bottom.vh: 5
 role: $inherited.types.heading-small
 color: White
+
+-- web-components.count-down:
+
+
 
 -- end: ftd.column
 
@@ -629,7 +629,7 @@ padding.px: 4
 if: { ftd.device == "mobile" }
 children: $carousel.wrap
 spacing.fixed.px: 32
-width: fill-container
+width.fixed.percent: 85
 align-content: center
 padding-horizontal.px: 12
 z-index: 0
@@ -673,15 +673,18 @@ optional integer index:
 optional integer reset:
 
 -- ftd.column:
-background.solid: $inherited.colors.background.step-1
+background.solid: #00000088
 max-width.fixed.percent if { ftd.device == "desktop" }: 25
-border-width.px: 8
-border-radius.px: 16
-border-color: #2D2727
+border-top-left-radius.px: 16
+border-top-right-radius.px: 16
+border-bottom-left-radius.px: 20
+border-bottom-right-radius.px: 20
 
 -- ftd.image:
 src: $blog-1.pic
 width: fill-container
+border-top-left-radius.px: 16
+border-top-right-radius.px: 16
 
 -- ftd.column:
 padding.px: 24
@@ -689,7 +692,7 @@ padding.px: 24
 -- ftd.text: $blog-1.head
 role: $inherited.types.copy-regular
 style: bold
-color: #8F43EE
+color: #f20487
 margin-bottom.px: 4
 
 -- ftd.text: $blog-1.title
@@ -822,10 +825,10 @@ children card:
 -- ftd.column:
 width: fill-container
 align-content: center
-margin-vertical.vh: 1
+margin-vertical.vh: 3
 
 -- ftd.text: $sponsor-section.title
-role: $inherited.types.heading-large
+role: $inherited.types.heading-medium
 margin-vertical.vh: 2
 color: White
 
@@ -854,22 +857,26 @@ wrap: true
 -- component sponsor-card:
 caption name:
 ftd.image-src logo:
+boolean $is-active: false
 
 -- ftd.column:
 width.fixed.px: 300
 height.fixed.px: 200
-background.solid: white
+background.solid: #FFFFFF66
 border-radius.px: 20
-padding.px: 20
 align-content: center
+padding.px: 20
+$on-mouse-enter$: $ftd.set-bool($a = $sponsor-card.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $sponsor-card.is-active, v = false)
 
 -- ftd.image:
 src: $sponsor-card.logo
 height.fixed.px: 80
 
 -- ftd.text: $sponsor-card.name
+if: {sponsor-card.is-active}
 role: $inherited.types.heading-tiny
-color: #8F43EE
+color: #f20487
 style: semi-bold
 margin-top.px: 16
 

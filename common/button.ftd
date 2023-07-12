@@ -38,7 +38,7 @@ boolean $is-active: false
 padding-horizontal.px: 12
 padding-vertical.px: 16
 border-radius.px: 10
-background.solid: #8F43EE
+background.solid: #f20487
 link: $button-2.link
 border-width.px: 2
 
@@ -70,7 +70,7 @@ padding-horizontal.px: 12
 padding-vertical.px: 16
 border-radius.px: 10
 background.solid if { button-3.is-active} : White
-background.solid: #8F43EE
+background.solid: #f20487
 $on-mouse-enter$: $ftd.set-bool($a = $button-3.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-3.is-active, v = false)
 link: $button-3.link
@@ -79,7 +79,7 @@ link: $button-3.link
 role: $inherited.types.heading-small
 style: bold
 color: White
-color if { button-3.is-active}: #8F43EE
+color if { button-3.is-active}: #f20487
 
 -- end: ftd.row
 
@@ -103,7 +103,7 @@ padding-horizontal.px: 24
 padding-vertical.px: 16
 border-radius.px: 10
 background.solid if { button-4.is-active} : White
-background.solid: #8F43EE
+background.solid: #f20487
 $on-mouse-enter$: $ftd.set-bool($a = $button-4.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-4.is-active, v = false)
 link: $button-4.link
@@ -137,7 +137,7 @@ padding-horizontal.px: 12
 padding-vertical.px: 16
 border-radius.px: 10
 background.solid if { button-5.is-active} : White
-background.solid: #8F43EE
+background.solid: #f20487
 $on-mouse-enter$: $ftd.set-bool($a = $button-5.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-5.is-active, v = false)
 link: $button-5.link
