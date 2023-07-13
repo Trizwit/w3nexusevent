@@ -651,13 +651,13 @@ margin-bottom.px: 16
 padding-vertical.px: 8
 
 -- ftd.text: $blog-1.head
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-large
 style: bold
 color: white
 margin-bottom.px: 4
 
 -- ftd.text: $blog-1.title
-role: $inherited.types.label-large
+role: $inherited.types.copy-regular
 style: bold
 color: white
 margin-bottom.px: 12
