@@ -827,7 +827,7 @@ width.fixed.px: 300
 height.fixed.px: 200
 background.solid: #FFFFFFEE
 border-width.px: 4
-border-color if { !sponsor-card.is-active}: White
+border-color if { !sponsor-card.is-active}: #FFFFFFEE
 border-color if { sponsor-card.is-active} : #f20487
 border-radius.px: 20
 align-content: center
