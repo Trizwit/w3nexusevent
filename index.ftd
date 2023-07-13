@@ -94,23 +94,23 @@ trends.
 
 -- lib.sponsor-section: Organized by
 
--- lib.sponsor-card: Web3 Kerala
+-- lib.sponsor-card: 
 logo: $assets.files.images.web32.png
  
 -- end: lib.sponsor-section
 
 -- lib.sponsor-section: In Assoication with
 
--- lib.sponsor-card: Google Developers
+-- lib.sponsor-card: 
 logo: $assets.files.images.google.png
 
--- lib.sponsor-card: Wallet Hunter
+-- lib.sponsor-card: 
 logo: $assets.files.images.wallethunter.png
 
 -- lib.sponsor-card: Kerala Startup Mission 
 logo: $assets.files.images.ksum.png
 
--- lib.sponsor-card: Nefto
+-- lib.sponsor-card: 
 logo: $assets.files.images.nefto.png
  
 -- end: lib.sponsor-section
@@ -121,21 +121,21 @@ wrap if { ftd.device == "mobile" } : true
 
 -- lib.sponsor-section: Infrastructure Parnter
 
--- lib.sponsor-card: Zeeve
+-- lib.sponsor-card: 
 logo: $assets.files.images.zeeve.png
  
 -- end: lib.sponsor-section
 
--- lib.sponsor-section: Technical Partner
+-- lib.sponsor-section: Technology Partner
 
--- lib.sponsor-card: Trizwit
+-- lib.sponsor-card: 
 logo: $assets.files.images.Trizwit.png
  
 -- end: lib.sponsor-section
 
 -- lib.sponsor-section: Academy Partner
 
--- lib.sponsor-card: Tribe Academy
+-- lib.sponsor-card: 
 logo: $assets.files.images.tribe.png
  
 -- end: lib.sponsor-section
