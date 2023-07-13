@@ -11,7 +11,8 @@ cta-button-2: Become a Sponsor
 logo: $assets.files.images.logo.jpg
 
 -- lib.hero: Web3 Innovators Nexus
-title: July 29, 2023, 3pm - 7pm
+text-1: July 29 2023
+text-2: 3pm - 7pm
 cta-button-1: Register Now
 
 Fostering the growth of startups in the transformative world of Web3.

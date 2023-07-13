@@ -205,11 +205,11 @@ spacing.fixed.px: 8
 align-content: center
 
 -- button.button-2: $navbar-mobile.cta-button-1
-link: /
+link: https://web3kerala.com/
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- button.button-2: $navbar-mobile.cta-button-2
-link: /
+link: https://web3kerala.com/
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- end: ftd.row
@@ -345,10 +345,10 @@ align-content: right
 margin-right.vw: 4
 
 -- button.button-5: $navbar-desktop.cta-button-1
-link: /
+link: https://web3kerala.com/
 
 -- button.button-5: $navbar-desktop.cta-button-2
-link: /
+link: https://web3kerala.com/
 
 -- end: ftd.row
 
@@ -463,13 +463,18 @@ style: bold
 text-align: center
 color: white
 
--- ftd.text: $hero.title
+-- ftd.text: $hero.text-1
+margin-vertical.vh: 1
+role: $inherited.types.heading-medium
+color: White
+
+-- ftd.text: $hero.text-2
 margin-vertical.vh: 1
 role: $inherited.types.heading-medium
 color: White
 
 -- button.button-3: $hero.cta-button-1
-link: /
+link: https://web3kerala.com/
 
 -- ftd.text: $hero.content
 margin-top.vh: 1
@@ -499,12 +504,16 @@ style: bold
 text-align: center
 color: white
 
--- ftd.text: $hero.title
+-- ftd.text: $hero.text-1
+role: $inherited.types.heading-large
+color: White
+
+-- ftd.text: $hero.text-2
 role: $inherited.types.heading-large
 color: White
 
 -- button.button-4: $hero.cta-button-1
-link: /
+link: https://web3kerala.com/
 
 -- ftd.text: $hero.content
 margin-top.vh: 1
