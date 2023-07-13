@@ -413,14 +413,9 @@ link: $footer.url-2
 
 -- ftd.row:
 margin-top.vh: 1
-spacing.fixed.vh: 2
+spacing.fixed.vh: 1
 
--- ftd.text:  Made with FASTN
-role: $inherited.types.label-large
-style: semi-bold
-color: white
-
--- ftd.text:  by Team Trizwit
+-- ftd.text:  Made with FASTN by Trizwit
 role: $inherited.types.label-large
 style: semi-bold
 color: white
@@ -710,7 +705,7 @@ text-align: center
 color: #f20487
 
 -- ftd.text: $about.body
-role: $inherited.types.copy-regular
+role: $content
 color: White
 text-align: center
 opacity: 0.8
@@ -859,7 +854,9 @@ height.fixed.px: 80
 -- end: sponsor-card
 
 
-
+-- ftd.type content:
+size.px: 16
+font-family: IBM Plex Mono;
 
 
 
