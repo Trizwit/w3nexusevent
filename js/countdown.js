@@ -111,6 +111,8 @@ class CountDown extends HTMLElement {
   
     countdownLabels.forEach((label) => {
       label.style.fontSize = '14px';
+      label.style.minWidth = '20px'; // Add a minimum width to prevent shrinking
+      label.style.minHeight = '20px'; // Add a minimum height to prevent shrinking
     });
   
     // Adjust styles based on the screen width
