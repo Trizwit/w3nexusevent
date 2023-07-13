@@ -437,7 +437,8 @@ color: white
 
 -- component hero:
 caption heading:
-string title:
+string text-1:
+string text-2:
 string cta-button-1:
 body content:
 
