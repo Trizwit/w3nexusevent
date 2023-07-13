@@ -116,8 +116,8 @@ class CountDown extends HTMLElement {
     const screenWidth = window.innerWidth;
   
     if (screenWidth <= 768) {
-      container.style.width = '80vw';
-      container.style.height = '10vh';
+      container.style.width = '614px';
+      container.style.height = '100px';
       countdownDays.style.fontSize = '28px';
   
       countdownLabels.forEach((label) => {
@@ -126,8 +126,8 @@ class CountDown extends HTMLElement {
     }
   
     if (screenWidth <= 480) {
-      container.style.width = '80vw';
-      container.style.height = '8vh';
+      container.style.width = '384px';
+      container.style.height = '80px';
       countdownDays.style.fontSize = '18px';
   
       countdownLabels.forEach((label) => {
