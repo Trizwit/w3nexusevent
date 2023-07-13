@@ -6,6 +6,8 @@ favicon: /-/sarvom.github.io/web3event/images/web32.png
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/roboto-typography
+-- fastn.dependency: sarvom.github.io/holy-angel-typography
+
 
 -- fastn.auto-import: sarvom.github.io/web3event/FASTN/ds
 -- fastn.auto-import: sarvom.github.io/web3event/assets

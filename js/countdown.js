@@ -21,6 +21,7 @@ class CountDown extends HTMLElement {
     this.countdownElement.style.color = 'white';
     this.countdownElement.style.fontSize = '60px';
     this.countdownElement.style.margin = '10px';
+    //this.countdownElement.style.backgroundColor = 'yellow';
 
     container.appendChild(this.countdownElement);
     shadowRoot.appendChild(container);
@@ -61,7 +62,7 @@ class CountDown extends HTMLElement {
     // Format the countdown text with the desired structure
     const formattedCountdown = `
       <div style="display: flex; flex-direction: row;">
-        <div style="display: flex; flex-direction: column; align-items: center;">
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 10px;">
           <div style="font-weight: bold; margin-bottom: 5px;">${this.padZero(days)}</div>
           <div style="font-size: 14px; "font-weight: bold;">Days</div>
         </div>
