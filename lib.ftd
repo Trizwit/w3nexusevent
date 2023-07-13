@@ -439,6 +439,7 @@ color: white
 caption heading:
 string text-1:
 string text-2:
+string text-3:
 string cta-button-1:
 body content:
 
@@ -450,6 +451,7 @@ background.image: $assets.files.images.bg.png
 if: { ftd.device == "mobile" }
 align-content: center
 background.image: $assets.files.images.bg-2.png
+height.fixed.vh: 100
 
 -- ftd.column:
 margin-vertical.px: 24
@@ -464,15 +466,54 @@ style: bold
 text-align: center
 color: white
 
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.image:
+src: $assets.files.images.calendar.png
+height.fixed.px: 24
+align-self: center
+
 -- ftd.text: $hero.text-1
 margin-vertical.vh: 1
-role: $inherited.types.heading-medium
-color: White
+role: $inherited.types.heading-small
+align-self: center
+color: white
+
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.image:
+src: $assets.files.images.clock.svg
+height.fixed.px: 24
+align-self: center
 
 -- ftd.text: $hero.text-2
 margin-vertical.vh: 1
-role: $inherited.types.heading-medium
-color: White
+role: $inherited.types.heading-small
+align-self: center
+color: white
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.image:
+src: $assets.files.images.location-2.png
+height.fixed.px: 24
+align-self: center
+
+-- ftd.text: $hero.text-3
+margin-vertical.vh: 1
+role: $inherited.types.heading-small
+align-self: center
+color: #ffac1d
+
+-- end: ftd.row
 
 -- button.button-3: $hero.cta-button-1
 link: https://web3kerala.com/
@@ -505,13 +546,58 @@ style: bold
 text-align: center
 color: white
 
+-- ftd.row:
+spacing.fixed.px: 16
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.image:
+src: $assets.files.images.calendar.png
+height.fixed.px: 48
+align-self: center
+
 -- ftd.text: $hero.text-1
-role: $inherited.types.heading-large
-color: White
+margin-vertical.vh: 1
+role: $inherited.types.heading-medium
+align-self: center
+color: white
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.image:
+src: $assets.files.images.clock.svg
+height.fixed.px: 48
+align-self: center
 
 -- ftd.text: $hero.text-2
-role: $inherited.types.heading-large
-color: White
+margin-vertical.vh: 1
+role: $inherited.types.heading-medium
+align-self: center
+color: white
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.image:
+src: $assets.files.images.location-2.png
+height.fixed.px: 48
+align-self: center
+
+-- ftd.text: $hero.text-3
+margin-vertical.vh: 1
+role: $inherited.types.heading-medium
+align-self: center
+color: #faac1d
+
+-- end: ftd.row
 
 -- button.button-4: $hero.cta-button-1
 link: https://web3kerala.com/
@@ -866,7 +952,7 @@ height.fixed.px: 80
 
 -- ftd.type content:
 size.px: 16
-font-family: IBM Plex Mono;
+font-family: Poppins;
 
 
 
