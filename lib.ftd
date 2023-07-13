@@ -714,15 +714,17 @@ if: { ftd.device == "mobile" }
 -- ftd.column:
 margin-vertical.px: 32
 margin-horizontal.px: 32
+align-content: center
 
 -- ftd.text: $about.title
 role: $inherited.types.heading-large
+text-align: center
 color: #f20487
 
 -- ftd.text: $about.body
 role: $inherited.types.copy-regular
 color: White
-;;text-align: justify
+text-align: center
 opacity: 0.8
 
 -- end: ftd.column
@@ -748,7 +750,7 @@ role: $inherited.types.heading-large
 color: #f20487
 
 -- ftd.text: $about.body
-margin-left.percent: 4
+margin-top.vh: 2
 margin-right.percent: 10
 role: $inherited.types.copy-regular
 text-align: justify
@@ -834,14 +836,15 @@ wrap: true
 
 
 -- component sponsor-card:
-caption name:
+optional caption name:
 ftd.image-src logo:
 boolean $is-active: false
 
 -- ftd.column:
 width.fixed.px: 300
 height.fixed.px: 200
-background.solid: #FFFFFFEE
+background.solid if { !sponsor-card.is-active} : #FFFFFFEE
+background.solid if { sponsor-card.is-active}  : #FFFFFF
 border-width.px: 4
 border-color if { !sponsor-card.is-active}: #FFFFFFEE
 border-color if { sponsor-card.is-active} : #f20487
@@ -856,11 +859,11 @@ shadow: $common.box
 src: $sponsor-card.logo
 height.fixed.px: 80
 
--- ftd.text: $sponsor-card.name
-role: $inherited.types.heading-tiny
-color: #181939
-style: semi-bold
-margin-top.px: 16
+;;-- ftd.text: $sponsor-card.name
+;;role: $inherited.types.heading-tiny
+;;color: #181939
+;;style: semi-bold
+;;margin-top.px: 16
 
 -- end: ftd.column
 
