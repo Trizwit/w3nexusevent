@@ -1,6 +1,7 @@
 -- import: sarvom.github.io/web3event/common
 -- import: sarvom.github.io/web3event/common/button
 -- import: sarvom.github.io/web3event/web-components
+-- import: sarvom.github.io/holy-angel-typography 
 
 
 -- component page:
@@ -21,6 +22,7 @@ children c:
 
 -- ftd.column:
 width: fill-container
+types: $holy-angel-typography.types
 background.linear-gradient: $lg
 
 -- navbar: 
@@ -29,7 +31,6 @@ cta-text-1: $page.cta-text-1
 cta-text-2: $page.cta-text-2
 cta-text-3: $page.cta-text-3
 cta-text-4: $page.cta-text-4
-cta-text-5: $page.cta-text-5
 cta-button-1: $page.cta-button-1
 cta-button-2: $page.cta-button-2
 
@@ -82,7 +83,6 @@ cta-text-1: $navbar.cta-text-1
 cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
 cta-text-4: $navbar.cta-text-4
-cta-text-5: $navbar.cta-text-5
 cta-button-1: $navbar.cta-button-1
 cta-button-2: $navbar.cta-button-2
 logo: $navbar.logo
@@ -95,7 +95,6 @@ cta-text-1: $navbar.cta-text-1
 cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
 cta-text-4: $navbar.cta-text-4
-cta-text-5: $navbar.cta-text-5
 cta-button-1: $navbar.cta-button-1
 cta-button-2: $navbar.cta-button-2
 logo: $navbar.logo
@@ -175,30 +174,26 @@ padding-left.px: 16
 role: $inherited.types.heading-tiny
 margin-top.px: 8
 color: white
-
+link: index.html
 
 -- ftd.text: $navbar-mobile.cta-text-2
 role: $inherited.types.heading-tiny
 margin-top.px: 8
 color: white
+link: index.html#aboutus
 
 
 -- ftd.text: $navbar-mobile.cta-text-3
 role: $inherited.types.heading-tiny
 margin-top.px: 8
 color: white
-
+link: index.html#speakers
 
 -- ftd.text: $navbar-mobile.cta-text-4
 role: $inherited.types.heading-tiny
 margin-top.px: 8
 color: white
-
-
--- ftd.text: $navbar-mobile.cta-text-5
-role: $inherited.types.heading-tiny
-margin-top.px: 8
-color: white
+link: index.html#sponsors
 
 -- ftd.row:
 width: fill-container
@@ -280,6 +275,7 @@ role: $inherited.types.label-large
 style: semi-bold
 color: white
 align-self: center
+link: index.html
 
 -- end: ftd.column
 
@@ -297,6 +293,7 @@ role: $inherited.types.label-large
 style: semi-bold
 color: white
 align-self: center
+link: index.html#aboutus
 
 -- end: ftd.column
 
@@ -314,6 +311,7 @@ role: $inherited.types.label-large
 style: semi-bold
 color: white
 align-self: center
+link: index.html#speakers
 
 -- end: ftd.column
 
@@ -331,23 +329,7 @@ role: $inherited.types.label-large
 style: semi-bold
 color: white
 align-self: center
-
--- end: ftd.column
-
--- ftd.column:
-height: fill-container
-align-content: center
-margin-horizontal.vh: 2
-border-bottom-width.px if { navbar-desktop.is-active-5}: 4
-border-color: #f20487
-$on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-5, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-5, v = false)
-
--- ftd.text: $navbar-desktop.cta-text-5
-role: $inherited.types.label-large
-style: semi-bold
-color: white
-align-self: center
+link: index.html#sponsors
 
 -- end: ftd.column
 
@@ -462,14 +444,14 @@ body content:
 -- ftd.column:
 width: fill-container
 background.image: $assets.files.images.bg.png
-id: home
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
-margin-vertical.px: 24
 align-content: center
+background.image: $assets.files.images.bg-2.png
 
 -- ftd.column:
+margin-vertical.px: 24
 width: fill-container
 padding-horizontal.vw: 5
 align-content: center
@@ -808,6 +790,7 @@ children card:
 width: fill-container
 align-content: center
 margin-vertical.vh: 3
+id: sponsors
 
 -- ftd.text: $sponsor-section.title
 role: $inherited.types.heading-medium

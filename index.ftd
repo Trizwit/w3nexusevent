@@ -4,9 +4,8 @@
 -- lib.page:
 cta-text-1: Home
 cta-text-2: About
-cta-text-3: Sponsors
-cta-text-4: Agenda
-cta-text-5: Speakers
+cta-text-3: Speakers
+cta-text-4: Sponsors
 cta-button-1: Get Your Tickets
 cta-button-2: Become a Sponsor
 logo: $assets.files.images.logo.jpg
