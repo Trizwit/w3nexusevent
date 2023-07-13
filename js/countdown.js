@@ -64,22 +64,22 @@ class CountDown extends HTMLElement {
       <div style="display: flex; flex-direction: row;">
         <div style="display: flex; flex-direction: column; align-items: center; margin-left: 10px;">
           <div style="font-weight: bold; margin-bottom: 5px;">${this.padZero(days)}</div>
-          <div style="font-size: 14px; "font-weight: bold;">Days</div>
+          <div style="font-size: 14px; font-weight: bold; font-minWidth: 20px; font-minHeight: 20px;">Days</div>
         </div>
         <span style="font-weight: bold; margin: 0 5px;">:</span>
         <div style="display: flex; flex-direction: column; align-items: center; margin-left: 10px;">
           <div style="font-weight: bold; margin-bottom: 5px;">${this.padZero(hours)}</div>
-          <div style="font-size: 14px; "font-weight: bold;">Hours</div>
+          <div style="font-size: 14px; font-weight: bold; font-minWidth: 20px; font-minHeight: 20px;">Hours</div>
         </div>
         <span style="font-weight: bold; margin: 0 5px;">:</span>
         <div style="display: flex; flex-direction: column; align-items: center; margin-left: 10px;">
           <div style="font-weight: bold; margin-bottom: 5px;">${this.padZero(minutes)}</div>
-          <div style="font-size: 14px; "font-weight: bold;">Mins</div>
+          <div style="font-size: 14px; font-weight: bold; font-minWidth: 20px; font-minHeight: 20px;">Minutes</div>
         </div>
         <span style="font-weight: bold; margin: 0 5px;">:</span>
         <div style="display: flex; flex-direction: column; align-items: center; margin-left: 10px;">
           <div style="font-weight: bold; margin-bottom: 5px;">${this.padZero(seconds)}</div>
-          <div style="font-size: 14px; "font-weight: bold;">Seconds</div>
+          <div style="font-size: 14px; font-weight: bold; font-minWidth: 20px; font-minHeight: 20px;">Seconds</div>
         </div>
       </div>
     `;
