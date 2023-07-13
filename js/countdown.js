@@ -63,22 +63,22 @@ class CountDown extends HTMLElement {
       <div style="display: flex; flex-direction: row;">
         <div style="display: flex; flex-direction: column; align-items: center;">
           <div style="font-weight: bold; margin-bottom: 5px;">${this.padZero(days)}</div>
-          <div style="font-size: 14px;">Days</div>
+          <div style="font-size: 14px; "font-weight: bold;">Days</div>
         </div>
         <span style="font-weight: bold; margin: 0 5px;">:</span>
         <div style="display: flex; flex-direction: column; align-items: center; margin-left: 10px;">
           <div style="font-weight: bold; margin-bottom: 5px;">${this.padZero(hours)}</div>
-          <div style="font-size: 14px;">Hours</div>
+          <div style="font-size: 14px; "font-weight: bold;">Hours</div>
         </div>
         <span style="font-weight: bold; margin: 0 5px;">:</span>
         <div style="display: flex; flex-direction: column; align-items: center; margin-left: 10px;">
           <div style="font-weight: bold; margin-bottom: 5px;">${this.padZero(minutes)}</div>
-          <div style="font-size: 14px;">Mins</div>
+          <div style="font-size: 14px; "font-weight: bold;">Mins</div>
         </div>
         <span style="font-weight: bold; margin: 0 5px;">:</span>
         <div style="display: flex; flex-direction: column; align-items: center; margin-left: 10px;">
           <div style="font-weight: bold; margin-bottom: 5px;">${this.padZero(seconds)}</div>
-          <div style="font-size: 14px;">Seconds</div>
+          <div style="font-size: 14px; "font-weight: bold;">Seconds</div>
         </div>
       </div>
     `;
@@ -116,24 +116,17 @@ class CountDown extends HTMLElement {
     const screenWidth = window.innerWidth;
   
     if (screenWidth <= 768) {
-      container.style.width = '614px';
-      container.style.height = '100px';
+      container.style.width = '80vw';
+      container.style.height = '10vh';
       countdownDays.style.fontSize = '28px';
   
-      countdownLabels.forEach((label) => {
-        label.style.fontSize = '10px';
-      });
     }
   
     if (screenWidth <= 480) {
-      container.style.width = '384px';
-      container.style.height = '80px';
+      container.style.width = '80vw';
+      container.style.height = '8vh';
       countdownDays.style.fontSize = '18px';
-  
-      countdownLabels.forEach((label) => {
-        label.style.fontSize = '10px';
-      });
-  
+
       container.style.flexDirection = 'column'; // Adjust flex direction to display vertically
       container.style.alignItems = 'center'; // Align items to the start
       container.style.paddingLeft = '20px'; // Add left padding for better alignment
