@@ -16,8 +16,8 @@ optional string cta-text-7:
 optional string cta-text-8:   
 optional string cta-text-9:  
 optional string cta-text-10: 
-string cta-button-1: 
-string cta-button-2: 
+optional string cta-button-1: 
+optional string cta-button-2: 
 children c:
 
 -- ftd.column:
@@ -32,7 +32,6 @@ cta-text-2: $page.cta-text-2
 cta-text-3: $page.cta-text-3
 cta-text-4: $page.cta-text-4
 cta-button-1: $page.cta-button-1
-cta-button-2: $page.cta-button-2
 
 -- ftd.column:
 width: fill-container
@@ -84,7 +83,6 @@ cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
 cta-text-4: $navbar.cta-text-4
 cta-button-1: $navbar.cta-button-1
-cta-button-2: $navbar.cta-button-2
 logo: $navbar.logo
 
 
@@ -96,7 +94,6 @@ cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
 cta-text-4: $navbar.cta-text-4
 cta-button-1: $navbar.cta-button-1
-cta-button-2: $navbar.cta-button-2
 logo: $navbar.logo
 
 -- end: ftd.column
@@ -205,10 +202,6 @@ spacing.fixed.px: 8
 align-content: center
 
 -- button.button-2: $navbar-mobile.cta-button-1
-link: https://web3kerala.com/
-$on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
-
--- button.button-2: $navbar-mobile.cta-button-2
 link: https://web3kerala.com/
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
@@ -345,9 +338,6 @@ align-content: right
 margin-right.vw: 4
 
 -- button.button-5: $navbar-desktop.cta-button-1
-link: https://web3kerala.com/
-
--- button.button-5: $navbar-desktop.cta-button-2
 link: https://web3kerala.com/
 
 -- end: ftd.row

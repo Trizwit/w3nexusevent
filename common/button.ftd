@@ -35,6 +35,8 @@ string link:
 boolean $is-active: false
 
 -- ftd.row:
+width.fixed.px: 100
+align-content: center
 padding-horizontal.px: 12
 padding-vertical.px: 16
 border-radius.px: 10
@@ -133,6 +135,8 @@ string link:
 boolean $is-active: false
 
 -- ftd.row:
+align-content: center
+width.fixed.px: 120
 padding-horizontal.px: 12
 padding-vertical.px: 16
 border-radius.px: 10
