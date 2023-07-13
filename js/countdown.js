@@ -115,13 +115,6 @@ class CountDown extends HTMLElement {
     // Adjust styles based on the screen width
     const screenWidth = window.innerWidth;
   
-    if (screenWidth <= 768) {
-      container.style.width = '80vw';
-      container.style.height = '10vh';
-      countdownDays.style.fontSize = '28px';
-  
-    }
-  
     if (screenWidth <= 480) {
       container.style.width = '80vw';
       container.style.height = '8vh';
@@ -131,6 +124,15 @@ class CountDown extends HTMLElement {
       container.style.alignItems = 'center'; // Align items to the start
       container.style.paddingLeft = '20px'; // Add left padding for better alignment
     }
+
+    else if (screenWidth <= 768) {
+      container.style.width = '80vw';
+      container.style.height = '10vh';
+      countdownDays.style.fontSize = '28px';
+  
+    }
+  
+    
   
   }
   
