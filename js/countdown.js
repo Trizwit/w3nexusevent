@@ -125,21 +125,7 @@ class CountDown extends HTMLElement {
       });
     }
   
-    if (screenWidth <= 570) {
-      container.style.width = '80vw';
-      container.style.height = '8vh';
-      countdownDays.style.fontSize = '20px';
-  
-      countdownLabels.forEach((label) => {
-        label.style.fontSize = '10px';
-      });
-  
-      container.style.flexDirection = 'column'; // Adjust flex direction to display vertically
-      container.style.alignItems = 'center'; // Align items to the start
-      container.style.paddingLeft = '20px'; // Add left padding for better alignment
-    }
-  
-    if (screenWidth <= 425) {
+    if (screenWidth <= 480) {
       container.style.width = '80vw';
       container.style.height = '8vh';
       countdownDays.style.fontSize = '18px';
@@ -153,33 +139,6 @@ class CountDown extends HTMLElement {
       container.style.paddingLeft = '20px'; // Add left padding for better alignment
     }
   
-    if (screenWidth <= 375) {
-      container.style.width = '80vw';
-      container.style.height = '8vh';
-      countdownDays.style.fontSize = '16px';
-  
-      countdownLabels.forEach((label) => {
-        label.style.fontSize = '10px';
-      });
-  
-      container.style.flexDirection = 'column'; // Adjust flex direction to display vertically
-      container.style.alignItems = 'center'; // Align items to the start
-      container.style.paddingLeft = '20px'; // Add left padding for better alignment
-    }
-  
-    if (screenWidth <= 320) {
-      container.style.width = '80vw';
-      container.style.height = '8vh';
-      countdownDays.style.fontSize = '14px';
-  
-      countdownLabels.forEach((label) => {
-        label.style.fontSize = '8px';
-      });
-  
-      container.style.flexDirection = 'column'; // Adjust flex direction to display vertically
-      container.style.alignItems = 'center'; // Align items to the start
-      container.style.paddingLeft = '20px'; // Add left padding for better alignment
-    }
   }
   
 }

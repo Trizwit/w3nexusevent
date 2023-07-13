@@ -8,7 +8,7 @@ cta-text-3: Sponsors
 cta-text-4: Agenda
 cta-text-5: Speakers
 cta-button-1: Get Your Tickets
-cta-button-2: Become a Sponser
+cta-button-2: Become a Sponsor
 logo: $assets.files.images.logo.jpg
 
 -- lib.hero: Web3 Innovators Nexus
