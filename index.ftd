@@ -39,56 +39,38 @@ inspiration from their experiences and successes.
 pic: $assets.files.images.SajeevNair.jpg
 number: 1
 title: Limoverse
-cta-text: Learn more
 
-Experience the future of fashion at our Metaverse Fashion Show. Featuring awe-inspiring 
-designs from top NFT designers, our event is a celebration of digital art and innovation. 
-Get ready to immerse yourself in the world of digital art and witness the latest fashion 
-trends.
 
 -- lib.blog-1: Goutham J
 pic: $assets.files.images.Goutham.jpg
 title: Polkadex
 number: 2
-cta-text: Learn more
 
-Experience the future of fashion at our Metaverse Fashion Show. Featuring awe-inspiring 
-designs from top NFT designers, our event is a celebration of digital art and innovation. 
-Get ready to immerse yourself in the world of digital art and witness the latest fashion 
-trends.
+
 
 -- lib.blog-1: Jozef Jagan
 pic: $assets.files.images.Jozef.png
 title: Wallet Hunter
 number: 3
-cta-text: Learn more
 
-Experience the future of fashion at our Metaverse Fashion Show. Featuring awe-inspiring 
-designs from top NFT designers, our event is a celebration of digital art and innovation. 
-Get ready to immerse yourself in the world of digital art and witness the latest fashion 
-trends.
+
 
 -- lib.blog-1: Mirzad Makhdoom
 pic: $assets.files.images.Mirzad.png
 title: Tribe Academy
 number: 4
-cta-text: Learn more
 
-Experience the future of fashion at our Metaverse Fashion Show. Featuring awe-inspiring 
-designs from top NFT designers, our event is a celebration of digital art and innovation. 
-Get ready to immerse yourself in the world of digital art and witness the latest fashion 
-trends.
 
 -- lib.blog-1: Vijay Parvin
 pic: $assets.files.images.Vijay-Parvin.jpg
 title: BitsCrunch 
 number: 5
-cta-text: Learn more
 
-Experience the future of fashion at our Metaverse Fashion Show. Featuring awe-inspiring 
-designs from top NFT designers, our event is a celebration of digital art and innovation. 
-Get ready to immerse yourself in the world of digital art and witness the latest fashion 
-trends.
+-- lib.blog-1: Deep
+pic: $assets.files.images.Deep.jpg
+title: Google Cloud 
+number: 5
+
 
 -- end: lib.carousel
 
@@ -102,7 +84,7 @@ logo: $assets.files.images.web32.png
 -- lib.sponsor-section: In Assoication with
 
 -- lib.sponsor-card: 
-logo: $assets.files.images.google.png
+logo: $assets.files.images.google.svg
 
 -- lib.sponsor-card: 
 logo: $assets.files.images.wallethunter.png
