@@ -5,9 +5,9 @@
 cta-text-1: Home
 cta-text-2: About
 cta-text-3: Speakers
-cta-text-4: Sponsors
+cta-text-4: Parnters
 cta-button-1: Register
-logo: $assets.files.images.logo.jpg
+logo: $assets.files.images.w3inexus-white.png
 
 -- lib.hero: Web3 Innovators Nexus 2023
 text-1: July 29 2023
@@ -35,10 +35,10 @@ inspiration from their experiences and successes.
 
 -- lib.carousel: Speakers
 
--- lib.blog-1: Sajeev Nair
-pic: $assets.files.images.SajeevNair.jpg
-number: 1
-title: Limoverse
+;;-- lib.blog-1: Sajeev Nair
+;;pic: $assets.files.images.SajeevNair.jpg
+;;number: 1
+;;title: Limoverse
 
 
 -- lib.blog-1: Goutham J
@@ -100,13 +100,6 @@ logo: $assets.files.images.nefto.png
 -- ftd.row:
 width: fill-container
 wrap if { ftd.device == "mobile" } : true
-
--- lib.sponsor-section: Infrastructure Parnter
-
--- lib.sponsor-card: 
-logo: $assets.files.images.zeeve.png
- 
--- end: lib.sponsor-section
 
 -- lib.sponsor-section: Technology Partner
 
