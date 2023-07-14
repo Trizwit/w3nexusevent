@@ -202,7 +202,7 @@ spacing.fixed.px: 8
 align-content: center
 
 -- button.button-2: $navbar-mobile.cta-button-1
-link: https://web3kerala.com/
+link: https://lu.ma/web3innovatorsnexus
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- end: ftd.row
@@ -338,7 +338,7 @@ align-content: right
 margin-right.vw: 4
 
 -- button.button-5: $navbar-desktop.cta-button-1
-link: https://web3kerala.com/
+link: https://lu.ma/web3innovatorsnexus
 
 -- end: ftd.row
 
@@ -506,7 +506,7 @@ color: #ffac1d
 -- end: ftd.row
 
 -- button.button-3: $hero.cta-button-1
-link: https://web3kerala.com/
+link: https://lu.ma/web3innovatorsnexus
 
 -- ftd.text: $hero.content
 margin-top.vh: 1
@@ -590,7 +590,7 @@ color: #faac1d
 -- end: ftd.row
 
 -- button.button-4: $hero.cta-button-1
-link: https://web3kerala.com/
+link: https://lu.ma/web3innovatorsnexus
 
 -- ftd.text: $hero.content
 margin-top.vh: 1
@@ -928,6 +928,7 @@ shadow: $common.box
 -- ftd.image:
 src: $sponsor-card.logo
 height.fixed.px: 80
+max-width.fixed.percent: 90
 
 ;;-- ftd.text: $sponsor-card.name
 ;;role: $inherited.types.heading-tiny
