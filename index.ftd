@@ -4,8 +4,8 @@
 -- lib.page:
 cta-text-1: Home
 cta-text-2: About
-cta-text-3: Speakers
-cta-text-4: Parnters
+cta-text-3: Partners
+cta-text-4: Speakers
 cta-button-1: Register
 logo: $assets.files.images.w3inexus-white.png
 
@@ -33,46 +33,6 @@ inspiration from their experiences and successes.
 
 ​Together, let's drive the evolution of Web3 technologies and unlock their true potential.
 
--- lib.carousel: Speakers
-
-;;-- lib.blog-1: Sajeev Nair
-;;pic: $assets.files.images.SajeevNair.jpg
-;;number: 1
-;;title: Limoverse
-
-
--- lib.blog-1: Goutham J
-pic: $assets.files.images.Goutham.jpg
-title: Polkadex
-number: 2
-
-
-
--- lib.blog-1: Jozef Jagan
-pic: $assets.files.images.Jozef.png
-title: Wallet Hunter
-number: 3
-
-
-
--- lib.blog-1: Mirzad Makhdoom
-pic: $assets.files.images.Mirzad.png
-title: Tribe Academy
-number: 4
-
-
--- lib.blog-1: Vijay Parvin
-pic: $assets.files.images.Vijay-Parvin.jpg
-title: BitsCrunch 
-number: 5
-
--- lib.blog-1: Deep
-pic: $assets.files.images.Deep.jpg
-title: Google Cloud 
-number: 5
-
-
--- end: lib.carousel
 
 -- lib.sponsor-section: Organized by
 
@@ -114,6 +74,47 @@ logo: $assets.files.images.Trizwit.png
 logo: $assets.files.images.tribe.png
  
 -- end: lib.sponsor-section
+
+-- lib.carousel: Speakers
+
+;;-- lib.blog-1: Sajeev Nair
+;;pic: $assets.files.images.SajeevNair.jpg
+;;number: 1
+;;title: Limoverse
+
+
+-- lib.blog-1: Goutham J
+pic: $assets.files.images.Goutham.jpg
+title: Polkadex
+number: 2
+
+
+
+-- lib.blog-1: Jozef Jagan
+pic: $assets.files.images.Jozef.png
+title: Wallet Hunter
+number: 3
+
+
+
+-- lib.blog-1: Mirzad Makhdoom
+pic: $assets.files.images.Mirzad.png
+title: Tribe Academy
+number: 4
+
+
+-- lib.blog-1: Vijay Parvin
+pic: $assets.files.images.Vijay-Parvin.jpg
+title: BitsCrunch 
+number: 5
+
+-- lib.blog-1: Deep
+pic: $assets.files.images.Deep.jpg
+title: Google Cloud 
+number: 5
+
+
+-- end: lib.carousel
 
 -- end: ftd.row
 
