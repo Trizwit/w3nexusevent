@@ -7,7 +7,7 @@ cta-text-2: About
 cta-text-3: Partners
 cta-text-4: Speakers
 cta-button-1: Register
-logo: $assets.files.images.w3inexus-white.png
+logo: $assets.files.images.win.png
 
 -- lib.hero: Web3 Innovators Nexus 2023
 text-1: July 29 2023
@@ -75,6 +75,8 @@ logo: $assets.files.images.tribe.png
  
 -- end: lib.sponsor-section
 
+-- end: ftd.row
+
 -- lib.carousel: Speakers
 
 ;;-- lib.blog-1: Sajeev Nair
@@ -115,7 +117,5 @@ number: 5
 
 
 -- end: lib.carousel
-
--- end: ftd.row
 
 -- end: lib.page
