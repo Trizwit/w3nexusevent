@@ -7,7 +7,7 @@ cta-text-2: About
 cta-text-3: Partners
 cta-text-4: Speakers
 cta-button-1: Register
-logo: $assets.files.images.win.png
+logo: $assets.files.images.w3inexus-white.png
 
 -- lib.hero: Web3 Innovators Nexus 2023
 text-1: July 29 2023
