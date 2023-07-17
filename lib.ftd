@@ -402,12 +402,29 @@ link: $footer.url-2
 
 -- ftd.row:
 margin-top.vh: 1
-spacing.fixed.vh: 1
+spacing.fixed.vh: 0.9
 
--- ftd.text:  Made with FASTN by Trizwit
+-- ftd.text: Made with 
 role: $inherited.types.label-large
 style: semi-bold
 color: white
+
+-- ftd.text: FASTN 
+role: $inherited.types.label-large
+style: semi-bold
+color: white
+link: https://fastn.com/
+
+-- ftd.text: by
+role: $inherited.types.label-large
+style: semi-bold
+color: white
+
+-- ftd.text: Trizwit
+role: $inherited.types.label-large
+style: semi-bold
+color: white
+link: https://trizwit.com/
 
 -- end: ftd.row
 
