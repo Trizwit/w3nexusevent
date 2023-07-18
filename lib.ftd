@@ -927,8 +927,8 @@ ftd.image-src logo:
 boolean $is-active: false
 
 -- ftd.column:
-width.fixed.px: 300
-height.fixed.px: 200
+width.fixed.px: 360
+height.fixed.px: 240
 background.solid if { !sponsor-card.is-active} : #FFFFFFEE
 background.solid if { sponsor-card.is-active}  : #FFFFFF
 border-width.px: 4
@@ -936,15 +936,15 @@ border-color if { !sponsor-card.is-active}: #FFFFFFEE
 border-color if { sponsor-card.is-active} : #f20487
 border-radius.px: 20
 align-content: center
-padding.px: 20
+padding.px: 16
 $on-mouse-enter$: $ftd.set-bool($a = $sponsor-card.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $sponsor-card.is-active, v = false)
 shadow: $common.box
 
 -- ftd.image:
 src: $sponsor-card.logo
-height.fixed.px: 80
-max-width.fixed.percent: 90
+height.fixed.px: 100
+max-width.fixed.percent: 100
 
 ;;-- ftd.text: $sponsor-card.name
 ;;role: $inherited.types.heading-tiny
