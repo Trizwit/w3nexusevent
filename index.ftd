@@ -1,5 +1,5 @@
--- import: sarvom.github.io/web3event/lib
--- import: sarvom.github.io/web3event/web-components
+-- import: web3innovatornexus.xyz/lib
+-- import: web3innovatornexus.xyz/web-components
 
 -- lib.page:
 cta-text-1: Home
