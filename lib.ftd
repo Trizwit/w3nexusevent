@@ -1,6 +1,6 @@
--- import: sarvom.github.io/web3event/common
--- import: sarvom.github.io/web3event/common/button
--- import: sarvom.github.io/web3event/web-components
+-- import: web3innovatornexus.xyz/common
+-- import: web3innovatornexus.xyz/common/button
+-- import: web3innovatornexus.xyz/web-components
 -- import: sarvom.github.io/holy-angel-typography 
 
 
