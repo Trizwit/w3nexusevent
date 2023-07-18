@@ -185,14 +185,14 @@ $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 role: $inherited.types.heading-tiny
 margin-top.px: 8
 color: white
-link: index.html#speakers
+link: index.html#sponsors
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- ftd.text: $navbar-mobile.cta-text-4
 role: $inherited.types.heading-tiny
 margin-top.px: 8
 color: white
-link: index.html#sponsors
+link: index.html#speakers
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- ftd.row:
@@ -309,7 +309,8 @@ role: $inherited.types.label-large
 style: semi-bold
 color: white
 align-self: center
-link: index.html#speakers
+link: index.html#sponsors
+
 
 -- end: ftd.column
 
@@ -327,7 +328,7 @@ role: $inherited.types.label-large
 style: semi-bold
 color: white
 align-self: center
-link: index.html#sponsors
+link: index.html#speakers
 
 -- end: ftd.column
 
@@ -807,7 +808,7 @@ text-align: center
 color: #f20487
 
 -- ftd.text: $about.body
-role: $content
+role: $inherited.types.copy-regular
 color: White
 text-align: center
 opacity: 0.8
