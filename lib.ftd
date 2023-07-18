@@ -451,12 +451,12 @@ body content:
 
 -- ftd.column:
 width: fill-container
-background.image: $assets.files.images.bg.png
+background.image: images/bg.png
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
 align-content: center
-background.image: $assets.files.images.bg-2.png
+background.image: images/bg-2.png
 height.fixed.vh: 100
 
 -- ftd.column:
