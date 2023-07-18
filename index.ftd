@@ -72,7 +72,7 @@ logo: $assets.files.images.Trizwit.png
 -- lib.sponsor-section: Academy Partner
 
 -- lib.sponsor-card: 
-logo: $assets.files.images.tribe.png
+logo: $assets.files.images.tribe-2.png
  
 -- end: lib.sponsor-section
 
