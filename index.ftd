@@ -55,6 +55,9 @@ logo: $assets.files.images.ksum.png
 
 -- lib.sponsor-card: 
 logo: $assets.files.images.nefto.png
+
+-- lib.sponsor-card: 
+logo: $assets.files.images.muzikartboard.svg
  
 -- end: lib.sponsor-section
 
