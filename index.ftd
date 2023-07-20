@@ -86,16 +86,6 @@ logo: $assets.files.images.tribe-2.png
 
 -- lib.carousel: Speakers
 
-;;-- lib.blog-1: Sajeev Nair
-;;pic: $assets.files.images.SajeevNair.jpg
-;;number: 1
-;;title: Limoverse
-
-
--- lib.blog-1: Goutham J
-pic: $assets.files.images.Goutham.jpg
-title: Polkadex
-number: 1
 
 -- lib.blog-1: Jozef Jagan
 pic: $assets.files.images.Jozef.png
@@ -124,7 +114,7 @@ number: 6
 
 -- lib.blog-1: Aditi Gupta
 pic: $assets.files.images.aditi.jpg
-title: Noradek 
+title: Nordek 
 number: 6
 
 
