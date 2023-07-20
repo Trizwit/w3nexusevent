@@ -92,32 +92,32 @@ logo: $assets.files.images.tribe-2.png
 -- lib.blog-1: Goutham J
 pic: $assets.files.images.Goutham.jpg
 title: Polkadex
-number: 2
-
-
+number: 1
 
 -- lib.blog-1: Jozef Jagan
 pic: $assets.files.images.Jozef.png
 title: Wallet Hunter
-number: 3
-
-
+number: 2
 
 -- lib.blog-1: Mirzad Makhdoom
 pic: $assets.files.images.Mirzad.png
 title: Tribe Academy
-number: 4
-
+number: 3
 
 -- lib.blog-1: Vijay Parvin
 pic: $assets.files.images.Vijay-Parvin.jpg
 title: BitsCrunch 
-number: 5
+number: 4
 
 -- lib.blog-1: Deep
 pic: $assets.files.images.Deep.jpg
 title: Google Cloud 
 number: 5
+
+-- lib.blog-1: Vivek Prasannan
+pic: $assets.files.images.vivek.jpeg
+title: Polkadex 
+number: 6
 
 
 -- end: lib.carousel
