@@ -60,7 +60,7 @@ logo: $assets.files.images.nefto.png
 logo: $assets.files.images.muzikartboard.svg
 
 -- lib.sponsor-card: 
-logo: $assets.files.images.Nordek.png
+logo: $assets.files.images.nordek.png
  
 -- end: lib.sponsor-section
 
