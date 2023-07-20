@@ -60,7 +60,7 @@ logo: $assets.files.images.nefto.png
 logo: $assets.files.images.muzikartboard.svg
 
 -- lib.sponsor-card: 
-logo: $assets.files.images.nordek.png
+logo: $assets.files.images.Nordek.png
  
 -- end: lib.sponsor-section
 
@@ -114,7 +114,7 @@ number: 6
 
 -- lib.blog-1: Aditi Gupta
 pic: $assets.files.images.aditi.jpg
-title: Nordek 
+title: Noradek 
 number: 6
 
 
