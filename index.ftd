@@ -60,7 +60,7 @@ logo: $assets.files.images.nefto.png
 logo: $assets.files.images.muzikartboard.svg
 
 -- lib.sponsor-card: 
-logo: $assets.files.images.nordek.png
+logo: $assets.files.images.Nordek.png
  
 -- end: lib.sponsor-section
 
@@ -123,7 +123,7 @@ title: Polkadex
 number: 6
 
 -- lib.blog-1: Aditi Gupta
-pic: $assets.files.images.aditi.jpg
+pic: $assets.files.images.Aditi.jpg
 title: Noradek 
 number: 6
 
