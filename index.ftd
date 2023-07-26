@@ -86,38 +86,53 @@ logo: $assets.files.images.tribe-2.png
 
 -- lib.carousel: Speakers
 
-
 -- lib.blog-1: Jozef Jagan
 pic: $assets.files.images.Jozef.png
 title: Wallet Hunter
-number: 2
+number: 1
 
 -- lib.blog-1: Mirzad Makhdoom
 pic: $assets.files.images.Mirzad.png
 title: Tribe Academy
-number: 3
+number: 2
 
--- lib.blog-1: Vijay Parvin
+-- lib.blog-1: Vijay Pravin
 pic: $assets.files.images.Vijay-Parvin.jpg
 title: BitsCrunch 
-number: 4
+number: 3
 
 -- lib.blog-1: Deep
 pic: $assets.files.images.Deep.jpg
 title: Google Cloud 
-number: 5
+number: 4
 
 -- lib.blog-1: Vivek Prasannan
 pic: $assets.files.images.vivek.jpeg
 title: Polkadex 
-number: 6
+number: 5
 
 -- lib.blog-1: Aditi Gupta
 pic: $assets.files.images.Aditi.jpg
 title: Nordek 
 number: 6
 
+-- lib.blog-1: Krutika Lodaya
+pic: $assets.files.images.Krutika.jpg
+title: Wallet Hunter 
+number: 7
 
 -- end: lib.carousel
 
+;;-- ftd.column:
+;;width: fill-container
+;;height.fixed.px: 1200
+;;align-content: center
+;;background.solid: Red
+
+;;-- web-components.carousel:
+
+;;-- end: ftd.column
+
 -- end: lib.page
+
+
