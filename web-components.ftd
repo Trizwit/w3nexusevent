@@ -2,3 +2,6 @@
 
 -- web-component count-down:
 js: js/countdown.js
+
+-- web-component carousel:
+js: js/carousel.js
