@@ -121,6 +121,11 @@ pic: $assets.files.images.Krutika.jpg
 title: Wallet Hunter 
 number: 7
 
+-- lib.blog-1: Sangeet Muralidhar
+pic: $assets.files.images.sangeet.png
+title: KONMA DAO 
+number: 8
+
 -- end: lib.carousel
 
 ;;-- ftd.column:
