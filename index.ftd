@@ -126,6 +126,11 @@ pic: $assets.files.images.sangeet.png
 title: KONMA DAO 
 number: 8
 
+-- lib.blog-1: Sneha Vijayan
+pic: $assets.files.images.sneha.jpeg
+title: Resolutio & DLA
+number: 9
+
 -- end: lib.carousel
 
 ;;-- ftd.column:
