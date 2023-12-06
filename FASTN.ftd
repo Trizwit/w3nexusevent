@@ -1,7 +1,7 @@
 -- import: fastn
 
--- fastn.package: trizwit.github.io/web3kevent
-favicon: /-/trizwit.github.io/web3kevent/images/logo.jpg
+-- fastn.package: trizwit.github.io/w3nexusevent
+favicon: /-/trizwit.github.io/w3nexusevent/images/logo.jpg
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
@@ -9,7 +9,7 @@ favicon: /-/trizwit.github.io/web3kevent/images/logo.jpg
 -- fastn.dependency: sarvom.github.io/holy-angel-typography
 
 
--- fastn.auto-import: trizwit.github.io/web3kevent/FASTN/ds
--- fastn.auto-import: trizwit.github.io/web3kevent/assets
+-- fastn.auto-import: trizwit.github.io/w3nexusevent/FASTN/ds
+-- fastn.auto-import: trizwit.github.io/w3nexusevent/assets
 -- fastn.auto-import: doc-site
 
