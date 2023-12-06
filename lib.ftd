@@ -764,6 +764,7 @@ margin-bottom.px: 12
 ftd.image-src pic:
 caption title:
 body body:
+children c:
 
 -- ftd.column:
 padding-horizontal.vw if { ftd.device == "desktop" }: 5
@@ -791,6 +792,9 @@ color: White
 text-align: center
 opacity: 0.8
 
+-- ftd.column:
+children: $about.c
+
 -- end: ftd.column
 
 -- ftd.image:
@@ -798,6 +802,8 @@ src: $about.pic
 width.fixed.percent: 90
 align-self: center
 border-radius.px: 20
+
+-- end: ftd.column
 
 -- end: ftd.column
 
@@ -821,6 +827,11 @@ text-align: justify
 color: White
 opacity: 0.8
 
+-- ftd.column:
+children: $about.c
+
+-- end: ftd.column
+
 -- end: ftd.column
 
 -- ftd.image:
@@ -834,6 +845,40 @@ border-radius.px: 20
 -- end: ftd.column
 
 -- end: about
+
+
+
+
+
+
+
+
+
+-- component about-details:
+string text:
+body content:
+
+-- ftd.column:
+
+-- ftd.text: $about-details.text
+margin-top.vh: 2
+margin-right.percent: 10
+role: $inherited.types.copy-regular
+text-align: justify
+color: White
+opacity: 0.8
+
+-- ftd.text: $about-details.content
+margin-top.vh: 2
+margin-right.percent: 10
+role: $inherited.types.copy-regular
+text-align: justify
+color: White
+opacity: 0.8
+
+-- end: ftd.column
+
+-- end: about-details
 
 
 
