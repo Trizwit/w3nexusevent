@@ -87,7 +87,7 @@ cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
 cta-text-4: $navbar.cta-text-4
 cta-button-1: $navbar.cta-button-1
-cta-button-1: $navbar.cta-button-1-link
+cta-button-1-link: $navbar.cta-button-1-link
 logo: $navbar.logo
 
 
