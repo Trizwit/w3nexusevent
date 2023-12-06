@@ -870,7 +870,6 @@ margin-bottom.px: 8
 
 -- ftd.text: $about-details.content
 role: $inherited.types.copy-regular
-text-align: justify
 color: White
 opacity: 0.8
 margin-bottom.px: 8
