@@ -25,13 +25,13 @@ Fostering the growth of startups in the transformative world of Web3.
 -- lib.about: About Event
 pic: $assets.files.images.image.webp
 
-
 Join us at Web3 Innovators Nexus (WIN) in Bangalore 2023 for a dynamic networking session 
 with investors, mentors, and potential partners. We're committed to understanding your 
 needs, so register soon and share your expectations. Let's connect and make this event a 
 meaningful experience.
 
-Event type - Networking & Fun
+-- lib.about-details:
+text: Event type - Networking & Fun
 
 Join us ...
 
@@ -43,6 +43,7 @@ Join us ...
 
 - If you are looking to make partnerships and scale project
 
+-- end: lib.about
 
 -- lib.sponsor-section: Organized by
 
@@ -83,30 +84,6 @@ logo: $assets.files.images.tribe-2.png
 -- end: lib.sponsor-section
 
 -- end: ftd.row
-
-/-- lib.carousel: Speakers
-
-/-- lib.blog-1: Jozef Jagan
-pic: $assets.files.images.Jozef.png
-title: Wallet Hunter
-number: 1
-
-/-- lib.blog-1: Mirzad Makhdoom
-pic: $assets.files.images.Mirzad.png
-title: Tribe Academy
-number: 2
-
-/-- lib.blog-1: Vijay Pravin
-pic: $assets.files.images.Vijay-Parvin.jpg
-title: BitsCrunch 
-number: 3
-
-/-- lib.blog-1: Krutika Lodaya
-pic: $assets.files.images.Krutika.jpg
-title: Wallet Hunter 
-number: 7
-
-/-- end: lib.carousel
 
 -- end: lib.page
 
