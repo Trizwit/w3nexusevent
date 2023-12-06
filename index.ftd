@@ -31,6 +31,18 @@ with investors, mentors, and potential partners. We're committed to understandin
 needs, so register soon and share your expectations. Let's connect and make this event a 
 meaningful experience.
 
+Event type - Networking & Fun
+
+Join us ...
+
+- If you are a building something cool in Crypto/Web3
+
+- If you love investing in crazy stuff
+
+- If you enjoy connecting with amazing folks
+
+- If you are looking to make partnerships and scale project
+
 
 -- lib.sponsor-section: Organized by
 
@@ -44,24 +56,21 @@ logo: $assets.files.images.logo.jpg
 -- lib.sponsor-card: 
 logo: $assets.files.images.wallethunter.png
 
-/-- lib.sponsor-card: 
-logo: $assets.files.images.nefto.png
-
 -- lib.sponsor-card: 
 logo: $assets.files.images.muzikartboard.svg
 
 /-- lib.sponsor-card: 
-logo: $assets.files.images.Nordek.png
- 
+logo: $assets.files.images.befikra.webp
+
 -- end: lib.sponsor-section
 
 -- ftd.row:
 width: fill-container
 wrap if { ftd.device == "mobile" } : true
 
--- lib.sponsor-section: Technology Partner
+/-- lib.sponsor-section: Technology Partner
 
--- lib.sponsor-card: 
+/-- lib.sponsor-card: 
 logo: $assets.files.images.Trizwit.png
  
 -- end: lib.sponsor-section
@@ -75,54 +84,29 @@ logo: $assets.files.images.tribe-2.png
 
 -- end: ftd.row
 
--- lib.carousel: Speakers
+/-- lib.carousel: Speakers
 
--- lib.blog-1: Jozef Jagan
+/-- lib.blog-1: Jozef Jagan
 pic: $assets.files.images.Jozef.png
 title: Wallet Hunter
 number: 1
 
--- lib.blog-1: Mirzad Makhdoom
+/-- lib.blog-1: Mirzad Makhdoom
 pic: $assets.files.images.Mirzad.png
 title: Tribe Academy
 number: 2
 
--- lib.blog-1: Vijay Pravin
+/-- lib.blog-1: Vijay Pravin
 pic: $assets.files.images.Vijay-Parvin.jpg
 title: BitsCrunch 
 number: 3
 
-/-- lib.blog-1: Deep
-pic: $assets.files.images.Deep.jpg
-title: Google Cloud 
-number: 4
-
-/-- lib.blog-1: Vivek Prasannan
-pic: $assets.files.images.vivek.jpeg
-title: Polkadex 
-number: 5
-
-/-- lib.blog-1: Aditi Gupta
-pic: $assets.files.images.Aditi.jpg
-title: Nordek 
-number: 6
-
--- lib.blog-1: Krutika Lodaya
+/-- lib.blog-1: Krutika Lodaya
 pic: $assets.files.images.Krutika.jpg
 title: Wallet Hunter 
 number: 7
 
-/-- lib.blog-1: Sangeet Muralidhar
-pic: $assets.files.images.sangeet.png
-title: KONMA DAO 
-number: 8
-
-/-- lib.blog-1: Sneha Vijayan
-pic: $assets.files.images.sneha.jpeg
-title: Resolutio & DLA
-number: 9
-
--- end: lib.carousel
+/-- end: lib.carousel
 
 -- end: lib.page
 
