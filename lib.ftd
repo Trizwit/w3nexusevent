@@ -859,22 +859,21 @@ string text:
 body content:
 
 -- ftd.column:
+margin-top.vh: 2
 
 -- ftd.text: $about-details.text
-margin-top.vh: 2
-margin-right.percent: 10
 role: $inherited.types.copy-regular
 text-align: justify
 color: White
 opacity: 0.8
+margin-bottom.px: 8
 
 -- ftd.text: $about-details.content
-margin-top.vh: 2
-margin-right.percent: 10
 role: $inherited.types.copy-regular
 text-align: justify
 color: White
 opacity: 0.8
+margin-bottom.px: 8
 
 -- end: ftd.column
 
