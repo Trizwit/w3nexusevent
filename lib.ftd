@@ -925,15 +925,47 @@ src: $sponsor-card.logo
 height.fixed.px: 100
 max-width.fixed.percent: 100
 
-;;-- ftd.text: $sponsor-card.name
-;;role: $inherited.types.heading-tiny
-;;color: #181939
-;;style: semi-bold
-;;margin-top.px: 16
-
 -- end: ftd.column
 
 -- end: sponsor-card
+
+
+
+
+
+
+
+
+
+
+-- component sponsor-card-dark:
+optional caption name:
+ftd.image-src logo:
+boolean $is-active: false
+
+-- ftd.column:
+width.fixed.px: 360
+height.fixed.px: 240
+background.solid if { !sponsor-card-dark.is-active} : #000000
+background.solid if { sponsor-card-dark.is-active}  : #000000FF
+border-width.px: 4
+border-color if { !sponsor-card-dark.is-active}: #000000EE
+border-color if { sponsor-card-dark.is-active} : #faac1d
+border-radius.px: 20
+align-content: center
+padding.px: 16
+$on-mouse-enter$: $ftd.set-bool($a = $sponsor-card-dark.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $sponsor-card-dark.is-active, v = false)
+shadow: $common.box
+
+-- ftd.image:
+src: $sponsor-card-dark.logo
+height.fixed.px: 100
+max-width.fixed.percent: 100
+
+-- end: ftd.column
+
+-- end: sponsor-card-dark
 
 
 -- ftd.type content:

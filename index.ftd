@@ -34,29 +34,23 @@ meaningful experience.
 
 -- lib.sponsor-section: Organized by
 
--- lib.sponsor-card: 
-logo: $assets.files.images.wallethunter.png
- 
+-- lib.sponsor-card-dark: 
+logo: $assets.files.images.logo.jpg
+
 -- end: lib.sponsor-section
 
 -- lib.sponsor-section: In Assoication with
 
 -- lib.sponsor-card: 
-logo: $assets.files.images.google.svg
-
--- lib.sponsor-card: 
 logo: $assets.files.images.wallethunter.png
 
--- lib.sponsor-card: Kerala Startup Mission 
-logo: $assets.files.images.ksum.png
-
--- lib.sponsor-card: 
+/-- lib.sponsor-card: 
 logo: $assets.files.images.nefto.png
 
 -- lib.sponsor-card: 
 logo: $assets.files.images.muzikartboard.svg
 
--- lib.sponsor-card: 
+/-- lib.sponsor-card: 
 logo: $assets.files.images.Nordek.png
  
 -- end: lib.sponsor-section
@@ -98,17 +92,17 @@ pic: $assets.files.images.Vijay-Parvin.jpg
 title: BitsCrunch 
 number: 3
 
--- lib.blog-1: Deep
+/-- lib.blog-1: Deep
 pic: $assets.files.images.Deep.jpg
 title: Google Cloud 
 number: 4
 
--- lib.blog-1: Vivek Prasannan
+/-- lib.blog-1: Vivek Prasannan
 pic: $assets.files.images.vivek.jpeg
 title: Polkadex 
 number: 5
 
--- lib.blog-1: Aditi Gupta
+/-- lib.blog-1: Aditi Gupta
 pic: $assets.files.images.Aditi.jpg
 title: Nordek 
 number: 6
@@ -118,27 +112,17 @@ pic: $assets.files.images.Krutika.jpg
 title: Wallet Hunter 
 number: 7
 
--- lib.blog-1: Sangeet Muralidhar
+/-- lib.blog-1: Sangeet Muralidhar
 pic: $assets.files.images.sangeet.png
 title: KONMA DAO 
 number: 8
 
--- lib.blog-1: Sneha Vijayan
+/-- lib.blog-1: Sneha Vijayan
 pic: $assets.files.images.sneha.jpeg
 title: Resolutio & DLA
 number: 9
 
 -- end: lib.carousel
-
-;;-- ftd.column:
-;;width: fill-container
-;;height.fixed.px: 1200
-;;align-content: center
-;;background.solid: Red
-
-;;-- web-components.carousel:
-
-;;-- end: ftd.column
 
 -- end: lib.page
 
