@@ -4,12 +4,12 @@ class CountDown extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: 'open' });
 
     // Set the target date (YYYY-MM-DD format)
-    this.targetDate = '2023-07-29';
+    this.targetDate = '2023-12-10';
 
     const container = document.createElement('div');
     container.style.width = '60vw';
     container.style.height = '15vh';
-    container.style.background = 'linear-gradient(to left, #f70068 0%,#441066 100%)';
+    container.style.background = 'linear-gradient(to left, #ffac1d 0%, #7b6c42 0%)';
     container.style.borderRadius = '10px';
     container.style.padding = '10px';
     container.style.display = 'flex';

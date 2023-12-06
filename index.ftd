@@ -8,37 +8,34 @@ cta-text-2: About
 cta-text-3: Partners
 cta-text-4: Speakers
 cta-button-1: Register
-logo: $assets.files.images.w3inexus-white.png
+cta-button-1-link: https://lu.ma/Web3-Innovators-Nexus
+logo: $assets.files.images.logo.jpg
 
--- lib.hero: Web3 Innovators Nexus 2023
-text-1: July 29 2023
-text-2: 3pm - 7pm
-text-3: Kerala Startup Mission, Kochi
+-- lib.hero: Web3 Innovators Nexus - Bangalore 2023
+text-1: December 10 2023
+text-2: 5pm - 9pm
+text-3: Palm Meadows, Banglore
 cta-button-1: Register Now
+cta-button-1-link: https://lu.ma/Web3-Innovators-Nexus
+bg: $assets.files.images.bg-2.png
+bg-mobile: $assets.files.images.bg-mobile-2.png
 
 Fostering the growth of startups in the transformative world of Web3.
 
--- lib.about: About Web3 Innovator Nexus
-pic: $assets.files.images.web3.avif
+-- lib.about: About Event
+pic: $assets.files.images.image.webp
 
-Welcome to the Web3 Innovators Nexus, an event dedicated to fostering the growth of 
-startups in the transformative world of Web3.
 
-​At the Web3 Innovators Nexus, visionary entrepreneurs, technologists, investors, and 
-industry leaders come together to share insights and explore the limitless possibilities 
-of Web3 technologies.
-
-​Attend engaging keynote speeches, panel discussions, and fireside chats delivered by 
-influential leaders at the forefront of Web3 innovation. Gain invaluable insights and 
-inspiration from their experiences and successes.
-
-​Together, let's drive the evolution of Web3 technologies and unlock their true potential.
+Join us at Web3 Innovators Nexus (WIN) in Bangalore 2023 for a dynamic networking session 
+with investors, mentors, and potential partners. We're committed to understanding your 
+needs, so register soon and share your expectations. Let's connect and make this event a 
+meaningful experience.
 
 
 -- lib.sponsor-section: Organized by
 
 -- lib.sponsor-card: 
-logo: $assets.files.images.web32.png
+logo: $assets.files.images.wallethunter.png
  
 -- end: lib.sponsor-section
 

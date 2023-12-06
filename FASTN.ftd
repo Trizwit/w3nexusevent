@@ -1,7 +1,7 @@
 -- import: fastn
 
 -- fastn.package: trizwit.github.io/web3kevent
-favicon: /-/trizwit.github.io/web3kevent/images/w3inexus-white.png
+favicon: /-/trizwit.github.io/web3kevent/images/logo.jpg
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
