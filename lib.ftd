@@ -17,7 +17,9 @@ optional string cta-text-8:
 optional string cta-text-9:  
 optional string cta-text-10: 
 optional string cta-button-1: 
+optional string cta-button-1-link: 
 optional string cta-button-2: 
+optional string cta-button-2-link: 
 children c:
 
 -- ftd.column:
@@ -32,6 +34,7 @@ cta-text-2: $page.cta-text-2
 cta-text-3: $page.cta-text-3
 cta-text-4: $page.cta-text-4
 cta-button-1: $page.cta-button-1
+cta-button-1-link: $page.cta-button-1-link
 
 -- ftd.column:
 width: fill-container
@@ -68,6 +71,7 @@ optional string cta-text-8:
 optional string cta-text-9:
 optional string cta-text-10:
 optional string cta-button-1:
+optional string cta-button-1-link:
 optional string cta-button-2:
 
 -- ftd.column:
@@ -83,6 +87,7 @@ cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
 cta-text-4: $navbar.cta-text-4
 cta-button-1: $navbar.cta-button-1
+cta-button-1: $navbar.cta-button-1-link
 logo: $navbar.logo
 
 
@@ -94,6 +99,7 @@ cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
 cta-text-4: $navbar.cta-text-4
 cta-button-1: $navbar.cta-button-1
+cta-button-1-link: $navbar.cta-button-1-link
 logo: $navbar.logo
 
 -- end: ftd.column
@@ -123,6 +129,7 @@ optional string cta-text-8:
 optional string cta-text-9:
 optional string cta-text-10:
 optional string cta-button-1:
+optional string cta-button-1-link:
 optional string cta-button-2:
 ftd.image-src menu: $assets.files.images.menu.svg
 ftd.image-src close: $assets.files.images.close.svg
@@ -140,7 +147,7 @@ spacing: space-between
 
 -- ftd.image:
 src: $navbar-mobile.logo
-height.fixed.px: 40
+height.fixed.px: 60
 margin-left.px: 8
 
 -- ftd.image:
@@ -202,7 +209,7 @@ spacing.fixed.px: 8
 align-content: center
 
 -- button.button-2: $navbar-mobile.cta-button-1
-link: https://lu.ma/web3innovatorsnexus
+link: $navbar-mobile.cta-button-1-link
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- end: ftd.row
@@ -236,6 +243,7 @@ optional string cta-text-8:
 optional string cta-text-9:
 optional string cta-text-10:
 optional string cta-button-1:
+optional string cta-button-1-link:
 optional string cta-button-2:
 boolean $is-active-1: false
 boolean $is-active-2: false
@@ -255,7 +263,7 @@ sticky: true
 
 -- ftd.image:
 src: $navbar-desktop.logo
-height.fixed.px: 64
+height.fixed.px: 80
 padding.vh: 1
 align-self: center
 
@@ -264,7 +272,7 @@ height: fill-container
 align-content: center
 margin-horizontal.vh: 2
 border-bottom-width.px if { navbar-desktop.is-active-1}: 4
-border-color: #f20487
+border-color: #faac1d
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-1, v = false)
 
@@ -282,7 +290,7 @@ height: fill-container
 align-content: center
 margin-horizontal.vh: 2
 border-bottom-width.px if { navbar-desktop.is-active-2}: 4
-border-color: #f20487
+border-color: #faac1d
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-2, v = false)
 
@@ -300,7 +308,7 @@ height: fill-container
 align-content: center
 margin-horizontal.vh: 2
 border-bottom-width.px if { navbar-desktop.is-active-3}: 4
-border-color: #f20487
+border-color: #faac1d
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-3, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-3, v = false)
 
@@ -319,7 +327,7 @@ height: fill-container
 align-content: center
 margin-horizontal.vh: 2
 border-bottom-width.px if { navbar-desktop.is-active-4}: 4
-border-color: #f20487
+border-color: #faac1d
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active-4, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active-4, v = false)
 
@@ -339,7 +347,7 @@ align-content: right
 margin-right.vw: 4
 
 -- button.button-5: $navbar-desktop.cta-button-1
-link: https://lu.ma/web3innovatorsnexus
+link: $navbar-desktop.cta-button-1-link
 
 -- end: ftd.row
 
@@ -358,7 +366,7 @@ link: https://lu.ma/web3innovatorsnexus
 
 -- component footer:
 optional caption text:
-ftd.image-src logo: images/w3inexus-white.png
+ftd.image-src logo: images/logo.jpg
 optional string url: 
 ftd.image-src icon-1: $assets.files.images.insta.svg
 string url-1: https://www.instagram.com/web3_innovators_nexus/
@@ -448,16 +456,19 @@ string text-1:
 string text-2:
 string text-3:
 string cta-button-1:
+string cta-button-1-link:
 body content:
+ftd.image-src bg:
+ftd.image-src bg-mobile:
 
 -- ftd.column:
 width: fill-container
-background.image: images/bg.png
+background.image: $hero.bg
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
 align-content: center
-background.image: images/bg-2.png
+background.image: $hero.bg-mobile
 height.fixed.vh: 100
 
 -- ftd.column:
@@ -473,57 +484,17 @@ style: bold
 text-align: center
 color: white
 
--- ftd.row:
-spacing.fixed.px: 8
+-- text-icon-mobile: $hero.text-1
+icon: $assets.files.images.calendar.png
 
--- ftd.image:
-src: $assets.files.images.calendar.png
-height.fixed.px: 24
-align-self: center
+-- text-icon-mobile: $hero.text-2
+icon: $assets.files.images.clock-2.svg
 
--- ftd.text: $hero.text-1
-margin-vertical.vh: 1
-role: $inherited.types.heading-small
-align-self: center
-color: white
-
-
--- end: ftd.row
-
--- ftd.row:
-spacing.fixed.px: 8
-
--- ftd.image:
-src: $assets.files.images.clock.svg
-height.fixed.px: 24
-align-self: center
-
--- ftd.text: $hero.text-2
-margin-vertical.vh: 1
-role: $inherited.types.heading-small
-align-self: center
-color: white
-
--- end: ftd.row
-
--- ftd.row:
-spacing.fixed.px: 8
-
--- ftd.image:
-src: $assets.files.images.location-2.png
-height.fixed.px: 24
-align-self: center
-
--- ftd.text: $hero.text-3
-margin-vertical.vh: 1
-role: $inherited.types.heading-small
-align-self: center
-color: #ffac1d
-
--- end: ftd.row
+-- text-icon-mobile: $hero.text-3
+icon: $assets.files.images.location-2.png
 
 -- button.button-3: $hero.cta-button-1
-link: https://lu.ma/web3innovatorsnexus
+link: $hero.cta-button-1-link
 
 -- ftd.text: $hero.content
 margin-top.vh: 1
@@ -556,58 +527,19 @@ color: white
 -- ftd.row:
 spacing.fixed.px: 16
 
--- ftd.row:
-spacing.fixed.px: 8
+-- text-icon-desktop: $hero.text-1
+icon: $assets.files.images.calendar.png
 
--- ftd.image:
-src: $assets.files.images.calendar.png
-height.fixed.px: 48
-align-self: center
-
--- ftd.text: $hero.text-1
-margin-vertical.vh: 1
-role: $inherited.types.heading-medium
-align-self: center
-color: white
+-- text-icon-desktop: $hero.text-2
+icon: $assets.files.images.clock-2.svg
 
 -- end: ftd.row
 
--- ftd.row:
-spacing.fixed.px: 8
-
--- ftd.image:
-src: $assets.files.images.clock.svg
-height.fixed.px: 48
-align-self: center
-
--- ftd.text: $hero.text-2
-margin-vertical.vh: 1
-role: $inherited.types.heading-medium
-align-self: center
-color: white
-
--- end: ftd.row
-
--- end: ftd.row
-
--- ftd.row:
-spacing.fixed.px: 8
-
--- ftd.image:
-src: $assets.files.images.location-2.png
-height.fixed.px: 48
-align-self: center
-
--- ftd.text: $hero.text-3
-margin-vertical.vh: 1
-role: $inherited.types.heading-medium
-align-self: center
-color: #faac1d
-
--- end: ftd.row
+-- text-icon-desktop: $hero.text-3
+icon: $assets.files.images.location-2.png
 
 -- button.button-4: $hero.cta-button-1
-link: https://lu.ma/web3innovatorsnexus
+link: $hero.cta-button-1-link
 
 -- ftd.text: $hero.content
 margin-top.vh: 1
@@ -629,6 +561,52 @@ color: White
 
 
 
+
+
+-- component text-icon-mobile:
+ftd.image-src icon:
+caption text: 
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.image:
+src: $text-icon-mobile.icon
+height.fixed.px: 24
+align-self: center
+
+-- ftd.text: $text-icon-mobile.text
+margin-vertical.vh: 1
+role: $inherited.types.heading-small
+align-self: center
+color: white
+
+-- end: ftd.row
+
+-- end: text-icon-mobile
+
+
+-- component text-icon-desktop:
+ftd.image-src icon:
+caption text: 
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.image:
+src: $text-icon-desktop.icon
+height.fixed.px: 48
+align-self: center
+
+-- ftd.text: $text-icon-desktop.text
+margin-vertical.vh: 1
+role: $inherited.types.heading-medium
+align-self: center
+color: white
+
+-- end: ftd.row
+
+-- end: text-icon-desktop
 
 
 
@@ -738,14 +716,14 @@ src: $blog-1.pic
 width: fill-container
 border-radius.percent: 50
 border-width.px: 4
-border-color: #6f42c1
+border-color: #c1426f
 
 -- end: ftd.row
 
 -- ftd.row:
 align-content: center
 width.fixed.percent: 90
-background.solid: #f20487
+background.solid: #faac1d
 border-top-right-radius.px: 16
 border-bottom-right-radius.px: 45
 margin-bottom.px: 16
@@ -805,7 +783,7 @@ align-content: center
 -- ftd.text: $about.title
 role: $inherited.types.heading-large
 text-align: center
-color: #f20487
+color: #faac1d
 
 -- ftd.text: $about.body
 role: $inherited.types.copy-regular
@@ -833,7 +811,7 @@ margin-right.percent: 6
 
 -- ftd.text: $about.title
 role: $inherited.types.heading-large
-color: #f20487
+color: #faac1d
 
 -- ftd.text: $about.body
 margin-top.vh: 2
@@ -871,9 +849,9 @@ colors: $color-values-2
 
 -- ftd.linear-gradient-color list color-values-2:
 
--- ftd.linear-gradient-color: #000000
+-- ftd.linear-gradient-color: #010101
 
--- ftd.linear-gradient-color: #222222
+-- ftd.linear-gradient-color: #202020
 
 -- end: color-values-2
 
@@ -934,7 +912,7 @@ background.solid if { !sponsor-card.is-active} : #FFFFFFEE
 background.solid if { sponsor-card.is-active}  : #FFFFFF
 border-width.px: 4
 border-color if { !sponsor-card.is-active}: #FFFFFFEE
-border-color if { sponsor-card.is-active} : #f20487
+border-color if { sponsor-card.is-active} : #faac1d
 border-radius.px: 20
 align-content: center
 padding.px: 16
