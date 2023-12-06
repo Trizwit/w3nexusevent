@@ -1,6 +1,6 @@
--- import: trizwit.github.io/web3kevent/lib
--- import: trizwit.github.io/web3kevent/images
--- import: trizwit.github.io/web3kevent/web-components
+-- import: trizwit.github.io/w3nexusevent/lib
+-- import: trizwit.github.io/w3nexusevent/images
+-- import: trizwit.github.io/w3nexusevent/web-components
 
 -- lib.page:
 cta-text-1: Home
